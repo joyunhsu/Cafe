@@ -119,7 +119,7 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
             case 0: return 70
             case 1: return 182
             case 4: return 44
-            case 5: return 130
+            case 5: return 200
             default: return 100
             }
         }
