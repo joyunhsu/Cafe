@@ -12,6 +12,7 @@
 		9CFA8E5B22B9C00F00C09D93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFA8E5922B9C00F00C09D93 /* Main.storyboard */; };
 		9CFA8E5D22B9C01100C09D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CFA8E5C22B9C01100C09D93 /* Assets.xcassets */; };
 		9CFA8E6022B9C01100C09D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFA8E5E22B9C01100C09D93 /* LaunchScreen.storyboard */; };
+		9CFA8E6922B9D20700C09D93 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFA8E6822B9D20700C09D93 /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9CFA8E5C22B9C01100C09D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CFA8E5F22B9C01100C09D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CFA8E6122B9C01100C09D93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CFA8E6822B9D20700C09D93 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,46 @@
 			isa = PBXGroup;
 			children = (
 				9CFA8E5522B9C00F00C09D93 /* AppDelegate.swift */,
-				9CFA8E5722B9C00F00C09D93 /* ViewController.swift */,
-				9CFA8E5922B9C00F00C09D93 /* Main.storyboard */,
+				9CFA8E6722B9D1D700C09D93 /* Extension */,
+				9CFA8E6C22B9D26B00C09D93 /* Model */,
+				9CFA8E6B22B9D25800C09D93 /* View */,
+				9CFA8E6A22B9D24600C09D93 /* Controller */,
 				9CFA8E5C22B9C01100C09D93 /* Assets.xcassets */,
 				9CFA8E5E22B9C01100C09D93 /* LaunchScreen.storyboard */,
 				9CFA8E6122B9C01100C09D93 /* Info.plist */,
 			);
 			path = "PicCollage Quiz";
+			sourceTree = "<group>";
+		};
+		9CFA8E6722B9D1D700C09D93 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9CFA8E6822B9D20700C09D93 /* UIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9CFA8E6A22B9D24600C09D93 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9CFA8E5722B9C00F00C09D93 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9CFA8E6B22B9D25800C09D93 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9CFA8E5922B9C00F00C09D93 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9CFA8E6C22B9D26B00C09D93 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CFA8E6922B9D20700C09D93 /* UIView+Extension.swift in Sources */,
 				9CFA8E5822B9C00F00C09D93 /* ViewController.swift in Sources */,
 				9CFA8E5622B9C00F00C09D93 /* AppDelegate.swift in Sources */,
 			);
