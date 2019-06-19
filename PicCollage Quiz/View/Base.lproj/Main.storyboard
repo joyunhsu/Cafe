@@ -142,18 +142,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eeY-3l-90D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3607" y="125"/>
+            <point key="canvasLocation" x="3138" y="125"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="KNF-in-Ff0">
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="ia2-4N-sZW" customClass="DetailViewController" customModule="PicCollage_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="exN-Mw-Sh0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kZe-cO-SMs">
-                                <rect key="frame" x="0.0" y="64" width="375" height="936"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="3Pn-nv-ehU">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
@@ -234,7 +234,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Sit-hp-kCH"/>
                     </view>
-                    <size key="freeformSize" width="375" height="1000"/>
                     <connections>
                         <outlet property="galleryCollectionView" destination="Mqv-Qn-UQI" id="rd5-pY-YFi"/>
                         <outlet property="tableView" destination="kZe-cO-SMs" id="CvX-0a-nXv"/>
@@ -242,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WYs-6W-aht" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4357.6000000000004" y="125.03748125937032"/>
+            <point key="canvasLocation" x="3887" y="125"/>
         </scene>
         <!--Notes-->
         <scene sceneID="P1m-py-hkB">
@@ -299,7 +298,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3y4-2d-44z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2823" y="125"/>
+            <point key="canvasLocation" x="2364" y="125"/>
         </scene>
     </scenes>
     <resources>
