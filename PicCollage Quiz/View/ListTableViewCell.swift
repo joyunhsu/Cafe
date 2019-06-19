@@ -15,8 +15,6 @@ class ListTableViewCell: UITableViewCell {
     @IBOutlet weak var cafeTitle: UILabel!
     @IBOutlet weak var rateView: CosmosView!
     
-    
-
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -8,9 +8,12 @@
 
 import UIKit
 
+let tags: [String] = ["WIFI", "POWER PLUG", "FOOD", "NO TIME LIMITS"]
+
 class ListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tagsCollectionVIew: UICollectionView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,12 +21,31 @@ class ListViewController: UIViewController {
         tableView.jh_registerCellWithNib(
             identifier: String(describing: ListTableViewCell.self),
             bundle: nil)
-
+        
+        self.navigationController?.isNavigationBarHidden = true
     }
 
 }
 
 extension ListViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        performSegue(withIdentifier: "DetailSegue", sender: nil)
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let view = UIView()
+        view.backgroundColor = UIColor(red: 248/255, green: 248/255, blue: 248/255, alpha: 1)
+        let label = UILabel()
+        label.text = "Sorted by distance"
+        label.textColor = UIColor(red: 65/255, green: 108/255, blue: 207/255, alpha: 1)
+        label.frame = CGRect(x: 20, y: 5, width: 200, height: 18)
+        view.addSubview(label)
+        
+        return view
+    }
     
 }
 
@@ -40,8 +62,37 @@ extension ListViewController: UITableViewDataSource {
         
         guard let listCell = cell as? ListTableViewCell else { return cell }
         
+        listCell.selectionStyle = .none
+        
         return listCell
     }
     
+}
+
+extension ListViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        return tags.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = tagsCollectionVIew.dequeueReusableCell(withReuseIdentifier: "tagCell", for: indexPath)
+        
+        return cell
+    }
+    
+}
+
+extension ListViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let labelWidth = tags[indexPath.item].size(withAttributes: [
+                NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 12)
+            ]).width
+        
+        return CGSize(width: labelWidth, height: 24)
+    }
 }

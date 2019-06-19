@@ -20,27 +20,26 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="117.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GmH-b3-WI8">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GmH-b3-WI8">
                         <rect key="frame" x="20" y="19" width="80" height="80"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="80" id="3B6-aK-C1t"/>
-                            <constraint firstAttribute="width" constant="80" id="Wsw-oA-nlI"/>
-                        </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="lWCornerRadius">
                                 <real key="value" value="4"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="西雅圖極品咖啡 台大店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCS-d2-bGx">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="西雅圖極品咖啡 台大店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCS-d2-bGx">
                         <rect key="frame" x="114" y="23" width="178" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <color key="textColor" name="B1"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lvr-XE-Seq" userLabel="Rate View">
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lvr-XE-Seq" userLabel="Rate View">
                         <rect key="frame" x="114" y="54" width="115" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yND-tx-4wg" customClass="CosmosView" customModule="Cosmos">
                                 <rect key="frame" x="0.0" y="1" width="86" height="13"/>
@@ -75,22 +74,17 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="115" id="a94-st-IMx"/>
-                            <constraint firstAttribute="height" constant="16" id="xfy-R5-3HB"/>
-                        </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="臺北市，大安區  200m  17 Review" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQg-Xq-4qT">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="臺北市，大安區  200m  17 Review" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQg-Xq-4qT">
                         <rect key="frame" x="129" y="80.5" width="202.5" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" name="B1"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Closed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkO-2k-uCU">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Closed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkO-2k-uCU">
                         <rect key="frame" x="299" y="23.5" width="39.5" height="20"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="20" id="Yhd-PZ-7SG"/>
-                        </constraints>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" name="B2"/>
                         <nil key="highlightedColor"/>
@@ -106,25 +100,11 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_SmallPin" translatesAutoresizingMaskIntoConstraints="NO" id="jzz-5R-zfL">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon_SmallPin" translatesAutoresizingMaskIntoConstraints="NO" id="jzz-5R-zfL">
                         <rect key="frame" x="116" y="83" width="9" height="11"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
                 </subviews>
-                <constraints>
-                    <constraint firstItem="DkO-2k-uCU" firstAttribute="leading" secondItem="YCS-d2-bGx" secondAttribute="trailing" constant="7" id="0vU-hi-ZRz"/>
-                    <constraint firstItem="YCS-d2-bGx" firstAttribute="leading" secondItem="GmH-b3-WI8" secondAttribute="trailing" constant="14" id="1io-rQ-cXL"/>
-                    <constraint firstItem="jzz-5R-zfL" firstAttribute="bottom" secondItem="GmH-b3-WI8" secondAttribute="bottom" constant="-5" id="3zq-K6-46y"/>
-                    <constraint firstItem="GmH-b3-WI8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="6aq-iA-dVE"/>
-                    <constraint firstItem="sQg-Xq-4qT" firstAttribute="leading" secondItem="jzz-5R-zfL" secondAttribute="trailing" constant="4" id="AlR-t6-4sA"/>
-                    <constraint firstItem="sQg-Xq-4qT" firstAttribute="centerY" secondItem="jzz-5R-zfL" secondAttribute="centerY" id="Hv6-Iu-Uev"/>
-                    <constraint firstItem="jzz-5R-zfL" firstAttribute="leading" secondItem="YCS-d2-bGx" secondAttribute="leading" constant="2" id="PYI-Py-2d8"/>
-                    <constraint firstItem="GmH-b3-WI8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="cvg-Xs-4uR"/>
-                    <constraint firstItem="DkO-2k-uCU" firstAttribute="centerY" secondItem="YCS-d2-bGx" secondAttribute="centerY" id="ey4-Fo-C8N"/>
-                    <constraint firstItem="YCS-d2-bGx" firstAttribute="top" secondItem="GmH-b3-WI8" secondAttribute="top" constant="4" id="jRY-53-oXA"/>
-                    <constraint firstItem="lvr-XE-Seq" firstAttribute="top" secondItem="YCS-d2-bGx" secondAttribute="bottom" constant="10" id="n1I-DT-7jy"/>
-                    <constraint firstItem="lvr-XE-Seq" firstAttribute="leading" secondItem="YCS-d2-bGx" secondAttribute="leading" id="vk5-dv-v22"/>
-                    <constraint firstAttribute="bottom" secondItem="GmH-b3-WI8" secondAttribute="bottom" constant="18.5" id="vwK-IZ-sDb"/>
-                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
@@ -132,7 +112,7 @@
                 <outlet property="cafeTitle" destination="YCS-d2-bGx" id="e39-dg-0JV"/>
                 <outlet property="rateView" destination="yND-tx-4wg" id="13l-pY-xMi"/>
             </connections>
-            <point key="canvasLocation" x="48.550724637681164" y="34.821428571428569"/>
+            <point key="canvasLocation" x="18" y="9"/>
         </tableViewCell>
     </objects>
     <resources>
