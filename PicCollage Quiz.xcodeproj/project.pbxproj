@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		9CFA8E5622B9C00F00C09D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFA8E5522B9C00F00C09D93 /* AppDelegate.swift */; };
-		9CFA8E5822B9C00F00C09D93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFA8E5722B9C00F00C09D93 /* ViewController.swift */; };
 		9CFA8E5B22B9C00F00C09D93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFA8E5922B9C00F00C09D93 /* Main.storyboard */; };
 		9CFA8E5D22B9C01100C09D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CFA8E5C22B9C01100C09D93 /* Assets.xcassets */; };
 		9CFA8E6022B9C01100C09D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFA8E5E22B9C01100C09D93 /* LaunchScreen.storyboard */; };
 		9CFA8E6922B9D20700C09D93 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFA8E6822B9D20700C09D93 /* UIView+Extension.swift */; };
+		9CFA8E7322B9D5CF00C09D93 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFA8E7122B9D5CF00C09D93 /* ListTableViewCell.swift */; };
+		9CFA8E7422B9D5CF00C09D93 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CFA8E7222B9D5CF00C09D93 /* ListTableViewCell.xib */; };
+		9CFA8E7622B9D5F900C09D93 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFA8E7522B9D5F900C09D93 /* ListViewController.swift */; };
+		E96DD5E5082528501CBA7FCA /* Pods_PicCollage_Quiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC33C6A499ADB9DF06590149 /* Pods_PicCollage_Quiz.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		895A56FB592C2D9CAD4A637F /* Pods-PicCollage Quiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicCollage Quiz.release.xcconfig"; path = "Target Support Files/Pods-PicCollage Quiz/Pods-PicCollage Quiz.release.xcconfig"; sourceTree = "<group>"; };
+		92643AF6A9A14BCB27E7E55B /* Pods-PicCollage Quiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicCollage Quiz.debug.xcconfig"; path = "Target Support Files/Pods-PicCollage Quiz/Pods-PicCollage Quiz.debug.xcconfig"; sourceTree = "<group>"; };
 		9CFA8E5222B9C00F00C09D93 /* PicCollage Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PicCollage Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFA8E5522B9C00F00C09D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9CFA8E5722B9C00F00C09D93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9CFA8E5A22B9C00F00C09D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CFA8E5C22B9C01100C09D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CFA8E5F22B9C01100C09D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CFA8E6122B9C01100C09D93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CFA8E6822B9D20700C09D93 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		9CFA8E7122B9D5CF00C09D93 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		9CFA8E7222B9D5CF00C09D93 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		9CFA8E7522B9D5F900C09D93 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		AC33C6A499ADB9DF06590149 /* Pods_PicCollage_Quiz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PicCollage_Quiz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E96DD5E5082528501CBA7FCA /* Pods_PicCollage_Quiz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				9CFA8E5422B9C00F00C09D93 /* PicCollage Quiz */,
 				9CFA8E5322B9C00F00C09D93 /* Products */,
+				EBA4670F9D020A247650CDE0 /* Pods */,
+				AFE848CDC5C189A323B23744 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,7 +90,7 @@
 		9CFA8E6A22B9D24600C09D93 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9CFA8E5722B9C00F00C09D93 /* ViewController.swift */,
+				9CFA8E7522B9D5F900C09D93 /* ListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -88,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				9CFA8E5922B9C00F00C09D93 /* Main.storyboard */,
+				9CFA8E7122B9D5CF00C09D93 /* ListTableViewCell.swift */,
+				9CFA8E7222B9D5CF00C09D93 /* ListTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -99,6 +112,24 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		AFE848CDC5C189A323B23744 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC33C6A499ADB9DF06590149 /* Pods_PicCollage_Quiz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBA4670F9D020A247650CDE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92643AF6A9A14BCB27E7E55B /* Pods-PicCollage Quiz.debug.xcconfig */,
+				895A56FB592C2D9CAD4A637F /* Pods-PicCollage Quiz.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CFA8E6422B9C01100C09D93 /* Build configuration list for PBXNativeTarget "PicCollage Quiz" */;
 			buildPhases = (
+				893B727F6F7E586E4D0E71EB /* [CP] Check Pods Manifest.lock */,
 				9CFA8E4E22B9C00F00C09D93 /* Sources */,
 				9CFA8E4F22B9C00F00C09D93 /* Frameworks */,
 				9CFA8E5022B9C00F00C09D93 /* Resources */,
+				2C049FE44E1CEE4750EF55E7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CFA8E6022B9C01100C09D93 /* LaunchScreen.storyboard in Resources */,
+				9CFA8E7422B9D5CF00C09D93 /* ListTableViewCell.xib in Resources */,
 				9CFA8E5D22B9C01100C09D93 /* Assets.xcassets in Resources */,
 				9CFA8E5B22B9C00F00C09D93 /* Main.storyboard in Resources */,
 			);
@@ -165,13 +199,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C049FE44E1CEE4750EF55E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PicCollage Quiz/Pods-PicCollage Quiz-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PicCollage Quiz/Pods-PicCollage Quiz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		893B727F6F7E586E4D0E71EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PicCollage Quiz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9CFA8E4E22B9C00F00C09D93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9CFA8E6922B9D20700C09D93 /* UIView+Extension.swift in Sources */,
-				9CFA8E5822B9C00F00C09D93 /* ViewController.swift in Sources */,
+				9CFA8E7322B9D5CF00C09D93 /* ListTableViewCell.swift in Sources */,
+				9CFA8E7622B9D5F900C09D93 /* ListViewController.swift in Sources */,
 				9CFA8E5622B9C00F00C09D93 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +398,7 @@
 		};
 		9CFA8E6522B9C01100C09D93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92643AF6A9A14BCB27E7E55B /* Pods-PicCollage Quiz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -334,6 +417,7 @@
 		};
 		9CFA8E6622B9C01100C09D93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 895A56FB592C2D9CAD4A637F /* Pods-PicCollage Quiz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -28,10 +28,10 @@
             </objects>
             <point key="canvasLocation" x="750" y="887"/>
         </scene>
-        <!--View Controller-->
+        <!--List View Controller-->
         <scene sceneID="AE1-Q7-hGH">
             <objects>
-                <viewController id="Is3-n0-MLG" sceneMemberID="viewController">
+                <viewController id="Is3-n0-MLG" customClass="ListViewController" customModule="PicCollage_Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vdh-tT-g15">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,6 +39,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SsV-wT-3ba">
                                 <rect key="frame" x="0.0" y="174" width="375" height="444"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Is3-n0-MLG" id="UcB-bz-7fR"/>
+                                    <outlet property="delegate" destination="Is3-n0-MLG" id="yox-8R-MRY"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Khy-5E-hvp">
                                 <rect key="frame" x="251" y="554" width="110" height="48"/>
