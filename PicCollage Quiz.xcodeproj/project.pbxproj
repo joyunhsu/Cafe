@@ -15,6 +15,13 @@
 		9CFA8E7322B9D5CF00C09D93 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFA8E7122B9D5CF00C09D93 /* ListTableViewCell.swift */; };
 		9CFA8E7422B9D5CF00C09D93 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CFA8E7222B9D5CF00C09D93 /* ListTableViewCell.xib */; };
 		9CFA8E7622B9D5F900C09D93 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFA8E7522B9D5F900C09D93 /* ListViewController.swift */; };
+		9CFA8E7822B9E43400C09D93 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFA8E7722B9E43400C09D93 /* DetailViewController.swift */; };
+		9CFA8E7B22BA079900C09D93 /* OverviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFA8E7922BA079900C09D93 /* OverviewTableViewCell.swift */; };
+		9CFA8E7C22BA079900C09D93 /* OverviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CFA8E7A22BA079900C09D93 /* OverviewTableViewCell.xib */; };
+		9CFA8E7E22BA156700C09D93 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFA8E7D22BA156700C09D93 /* UITableView+Extension.swift */; };
+		9CFA8E8122BA170500C09D93 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFA8E7F22BA170500C09D93 /* GalleryCollectionViewCell.swift */; };
+		9CFA8E8222BA170500C09D93 /* GalleryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CFA8E8022BA170500C09D93 /* GalleryCollectionViewCell.xib */; };
+		9CFA8E8422BA171900C09D93 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFA8E8322BA171900C09D93 /* UICollectionView+Extension.swift */; };
 		E96DD5E5082528501CBA7FCA /* Pods_PicCollage_Quiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC33C6A499ADB9DF06590149 /* Pods_PicCollage_Quiz.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +38,13 @@
 		9CFA8E7122B9D5CF00C09D93 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		9CFA8E7222B9D5CF00C09D93 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
 		9CFA8E7522B9D5F900C09D93 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		9CFA8E7722B9E43400C09D93 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9CFA8E7922BA079900C09D93 /* OverviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewTableViewCell.swift; sourceTree = "<group>"; };
+		9CFA8E7A22BA079900C09D93 /* OverviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverviewTableViewCell.xib; sourceTree = "<group>"; };
+		9CFA8E7D22BA156700C09D93 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		9CFA8E7F22BA170500C09D93 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		9CFA8E8022BA170500C09D93 /* GalleryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryCollectionViewCell.xib; sourceTree = "<group>"; };
+		9CFA8E8322BA171900C09D93 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		AC33C6A499ADB9DF06590149 /* Pods_PicCollage_Quiz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PicCollage_Quiz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -69,9 +83,9 @@
 			children = (
 				9CFA8E5522B9C00F00C09D93 /* AppDelegate.swift */,
 				9CFA8E6722B9D1D700C09D93 /* Extension */,
+				9CFA8E6A22B9D24600C09D93 /* Controller */,
 				9CFA8E6C22B9D26B00C09D93 /* Model */,
 				9CFA8E6B22B9D25800C09D93 /* View */,
-				9CFA8E6A22B9D24600C09D93 /* Controller */,
 				9CFA8E5C22B9C01100C09D93 /* Assets.xcassets */,
 				9CFA8E5E22B9C01100C09D93 /* LaunchScreen.storyboard */,
 				9CFA8E6122B9C01100C09D93 /* Info.plist */,
@@ -83,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				9CFA8E6822B9D20700C09D93 /* UIView+Extension.swift */,
+				9CFA8E7D22BA156700C09D93 /* UITableView+Extension.swift */,
+				9CFA8E8322BA171900C09D93 /* UICollectionView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -91,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				9CFA8E7522B9D5F900C09D93 /* ListViewController.swift */,
+				9CFA8E7722B9E43400C09D93 /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -101,6 +118,10 @@
 				9CFA8E5922B9C00F00C09D93 /* Main.storyboard */,
 				9CFA8E7122B9D5CF00C09D93 /* ListTableViewCell.swift */,
 				9CFA8E7222B9D5CF00C09D93 /* ListTableViewCell.xib */,
+				9CFA8E7922BA079900C09D93 /* OverviewTableViewCell.swift */,
+				9CFA8E7A22BA079900C09D93 /* OverviewTableViewCell.xib */,
+				9CFA8E7F22BA170500C09D93 /* GalleryCollectionViewCell.swift */,
+				9CFA8E8022BA170500C09D93 /* GalleryCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -126,7 +147,6 @@
 				92643AF6A9A14BCB27E7E55B /* Pods-PicCollage Quiz.debug.xcconfig */,
 				895A56FB592C2D9CAD4A637F /* Pods-PicCollage Quiz.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -191,9 +211,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CFA8E6022B9C01100C09D93 /* LaunchScreen.storyboard in Resources */,
+				9CFA8E8222BA170500C09D93 /* GalleryCollectionViewCell.xib in Resources */,
 				9CFA8E7422B9D5CF00C09D93 /* ListTableViewCell.xib in Resources */,
 				9CFA8E5D22B9C01100C09D93 /* Assets.xcassets in Resources */,
 				9CFA8E5B22B9C00F00C09D93 /* Main.storyboard in Resources */,
+				9CFA8E7C22BA079900C09D93 /* OverviewTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,9 +273,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CFA8E8422BA171900C09D93 /* UICollectionView+Extension.swift in Sources */,
+				9CFA8E7E22BA156700C09D93 /* UITableView+Extension.swift in Sources */,
+				9CFA8E8122BA170500C09D93 /* GalleryCollectionViewCell.swift in Sources */,
 				9CFA8E6922B9D20700C09D93 /* UIView+Extension.swift in Sources */,
 				9CFA8E7322B9D5CF00C09D93 /* ListTableViewCell.swift in Sources */,
+				9CFA8E7822B9E43400C09D93 /* DetailViewController.swift in Sources */,
 				9CFA8E7622B9D5F900C09D93 /* ListViewController.swift in Sources */,
+				9CFA8E7B22BA079900C09D93 /* OverviewTableViewCell.swift in Sources */,
 				9CFA8E5622B9C00F00C09D93 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

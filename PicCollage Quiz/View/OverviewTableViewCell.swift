@@ -1,5 +1,5 @@
 //
-//  ListTableViewCell.swift
+//  OverviewTableViewCell.swift
 //  PicCollage Quiz
 //
 //  Created by Jo Yun Hsu on 2019/6/19.
@@ -7,19 +7,13 @@
 //
 
 import UIKit
-import Cosmos
 
-class ListTableViewCell: UITableViewCell {
-    
-    @IBOutlet weak var cafeImage: UIImageView!
-    @IBOutlet weak var cafeTitle: UILabel!
-    @IBOutlet weak var rateView: CosmosView!
-    
-    
+class OverviewTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
