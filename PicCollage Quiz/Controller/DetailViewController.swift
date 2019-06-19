@@ -72,5 +72,12 @@ extension DetailViewController: UICollectionViewDataSource, UICollectionViewDele
         return galleryCell
     }
     
+//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//
+//        let view = SegmentHeaderView(coder: NSCoder)
+//
+//        return view
+//    }
+    
     
 }

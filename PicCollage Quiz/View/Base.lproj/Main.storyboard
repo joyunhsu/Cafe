@@ -219,16 +219,6 @@
                                         <constraint firstItem="Mqv-Qn-UQI" firstAttribute="leading" secondItem="3Pn-nv-ehU" secondAttribute="leading" id="uwP-F5-4jq"/>
                                     </constraints>
                                 </view>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Th6-n2-0sp">
-                                        <rect key="frame" x="0.0" y="228" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Th6-n2-0sp" id="uff-Sn-z6m">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="ia2-4N-sZW" id="tQ0-1r-vMV"/>
                                     <outlet property="delegate" destination="ia2-4N-sZW" id="sAr-tj-ulc"/>
