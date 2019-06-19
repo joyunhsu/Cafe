@@ -23,6 +23,10 @@
 		9C23A77222BA98B600748062 /* ButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C23A77022BA98B600748062 /* ButtonTableViewCell.xib */; };
 		9C23A77522BAAEAD00748062 /* SecondaryBtnTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C23A77322BAAEAD00748062 /* SecondaryBtnTableViewCell.swift */; };
 		9C23A77622BAAEAD00748062 /* SecondaryBtnTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C23A77422BAAEAD00748062 /* SecondaryBtnTableViewCell.xib */; };
+		9C23A77922BABB8200748062 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C23A77722BABB8200748062 /* PhotoTableViewCell.swift */; };
+		9C23A77A22BABB8200748062 /* PhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C23A77822BABB8200748062 /* PhotoTableViewCell.xib */; };
+		9C23A77D22BAC10200748062 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C23A77B22BAC10200748062 /* PhotoCollectionViewCell.swift */; };
+		9C23A77E22BAC10200748062 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C23A77C22BAC10200748062 /* PhotoCollectionViewCell.xib */; };
 		9CFA8E5622B9C00F00C09D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFA8E5522B9C00F00C09D93 /* AppDelegate.swift */; };
 		9CFA8E5B22B9C00F00C09D93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFA8E5922B9C00F00C09D93 /* Main.storyboard */; };
 		9CFA8E5D22B9C01100C09D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CFA8E5C22B9C01100C09D93 /* Assets.xcassets */; };
@@ -62,6 +66,10 @@
 		9C23A77022BA98B600748062 /* ButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonTableViewCell.xib; sourceTree = "<group>"; };
 		9C23A77322BAAEAD00748062 /* SecondaryBtnTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryBtnTableViewCell.swift; sourceTree = "<group>"; };
 		9C23A77422BAAEAD00748062 /* SecondaryBtnTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondaryBtnTableViewCell.xib; sourceTree = "<group>"; };
+		9C23A77722BABB8200748062 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		9C23A77822BABB8200748062 /* PhotoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoTableViewCell.xib; sourceTree = "<group>"; };
+		9C23A77B22BAC10200748062 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		9C23A77C22BAC10200748062 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
 		9CFA8E5222B9C00F00C09D93 /* PicCollage Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PicCollage Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFA8E5522B9C00F00C09D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CFA8E5A22B9C00F00C09D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -127,6 +135,10 @@
 		9C23A76E22BA987400748062 /* Photos */ = {
 			isa = PBXGroup;
 			children = (
+				9C23A77722BABB8200748062 /* PhotoTableViewCell.swift */,
+				9C23A77822BABB8200748062 /* PhotoTableViewCell.xib */,
+				9C23A77B22BAC10200748062 /* PhotoCollectionViewCell.swift */,
+				9C23A77C22BAC10200748062 /* PhotoCollectionViewCell.xib */,
 			);
 			path = Photos;
 			sourceTree = "<group>";
@@ -308,6 +320,7 @@
 				9CFA8E8222BA170500C09D93 /* GalleryCollectionViewCell.xib in Resources */,
 				9C23A76522BA97FD00748062 /* RatingsTableViewCell.xib in Resources */,
 				9C23A77222BA98B600748062 /* ButtonTableViewCell.xib in Resources */,
+				9C23A77A22BABB8200748062 /* PhotoTableViewCell.xib in Resources */,
 				9C23A75F22BA937C00748062 /* SectionHeaderTableViewCell.xib in Resources */,
 				9C23A76D22BA985100748062 /* InquiryTableViewCell.xib in Resources */,
 				9CFA8E7422B9D5CF00C09D93 /* ListTableViewCell.xib in Resources */,
@@ -317,6 +330,7 @@
 				9CFA8E5D22B9C01100C09D93 /* Assets.xcassets in Resources */,
 				9C23A75722BA893800748062 /* InfoTableViewCell.xib in Resources */,
 				9C23A76922BA981000748062 /* ReviewTableViewCell.xib in Resources */,
+				9C23A77E22BAC10200748062 /* PhotoCollectionViewCell.xib in Resources */,
 				9CFA8E5B22B9C00F00C09D93 /* Main.storyboard in Resources */,
 				9CFA8E7C22BA079900C09D93 /* OverviewTableViewCell.xib in Resources */,
 			);
@@ -377,12 +391,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C23A75A22BA8B7F00748062 /* FeatureTableViewCell.swift in Sources */,
+				9C23A77D22BAC10200748062 /* PhotoCollectionViewCell.swift in Sources */,
 				9CFA8E8422BA171900C09D93 /* UICollectionView+Extension.swift in Sources */,
 				9CFA8E7E22BA156700C09D93 /* UITableView+Extension.swift in Sources */,
 				9CFA8E8122BA170500C09D93 /* GalleryCollectionViewCell.swift in Sources */,
 				9CFA8E6922B9D20700C09D93 /* UIView+Extension.swift in Sources */,
 				9CFA8E7322B9D5CF00C09D93 /* ListTableViewCell.swift in Sources */,
 				9C23A76422BA97FD00748062 /* RatingsTableViewCell.swift in Sources */,
+				9C23A77922BABB8200748062 /* PhotoTableViewCell.swift in Sources */,
 				9C23A76822BA981000748062 /* ReviewTableViewCell.swift in Sources */,
 				9CFA8E7822B9E43400C09D93 /* DetailViewController.swift in Sources */,
 				9C23A77522BAAEAD00748062 /* SecondaryBtnTableViewCell.swift in Sources */,

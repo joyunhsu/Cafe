@@ -37,6 +37,8 @@ class DetailViewController: UIViewController {
         tableView.jh_registerCellWithNib(identifier: String(describing: InquiryTableViewCell.self), bundle: nil)
         
         tableView.jh_registerCellWithNib(identifier: String(describing: SectionHeaderTableViewCell.self), bundle: nil)
+        
+        tableView.jh_registerCellWithNib(identifier: String(describing: PhotoTableViewCell.self), bundle: nil)
 
     }
 
@@ -49,7 +51,7 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
         switch section {
         case 0: return 4
         case 1: return 6
-//        case 2: return 2
+        case 2: return 2
         default: return 0
         }
     }
@@ -98,6 +100,19 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
                 let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ReviewTableViewCell.self), for: indexPath) as! ReviewTableViewCell
                 return cell
             }
+            
+        } else if indexPath.section == 2 {
+            
+            switch indexPath.row {
+                
+            case 0:
+                let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SectionHeaderTableViewCell.self), for: indexPath) as! SectionHeaderTableViewCell
+                return cell
+                
+            default:
+                let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: PhotoTableViewCell.self), for: indexPath)
+                return cell
+            }
         }
         
         return UITableViewCell()
@@ -122,6 +137,12 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
             case 5: return 200
             default: return 100
             }
+        } else if indexPath.section == 2 {
+            
+            switch indexPath.row {
+            case 0: return 70
+            default: return 214
+            }
         }
         
         return 0
@@ -129,7 +150,7 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
 
-        return 2
+        return 3
     }
     
 }
