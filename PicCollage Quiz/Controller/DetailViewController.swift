@@ -48,10 +48,18 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
         return overviewCell
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 4
+        switch (indexPath.section, indexPath.row) {
+        case (0, 0): return 600
+        default: return 120
+        }
     }
+    
+//    func numberOfSections(in tableView: UITableView) -> Int {
+//
+//        return 4
+//    }
 }
 
 extension DetailViewController: UICollectionViewDataSource, UICollectionViewDelegate {
