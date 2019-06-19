@@ -21,6 +21,8 @@
 		9C23A76D22BA985100748062 /* InquiryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C23A76B22BA985100748062 /* InquiryTableViewCell.xib */; };
 		9C23A77122BA98B600748062 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C23A76F22BA98B600748062 /* ButtonTableViewCell.swift */; };
 		9C23A77222BA98B600748062 /* ButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C23A77022BA98B600748062 /* ButtonTableViewCell.xib */; };
+		9C23A77522BAAEAD00748062 /* SecondaryBtnTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C23A77322BAAEAD00748062 /* SecondaryBtnTableViewCell.swift */; };
+		9C23A77622BAAEAD00748062 /* SecondaryBtnTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C23A77422BAAEAD00748062 /* SecondaryBtnTableViewCell.xib */; };
 		9CFA8E5622B9C00F00C09D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFA8E5522B9C00F00C09D93 /* AppDelegate.swift */; };
 		9CFA8E5B22B9C00F00C09D93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFA8E5922B9C00F00C09D93 /* Main.storyboard */; };
 		9CFA8E5D22B9C01100C09D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CFA8E5C22B9C01100C09D93 /* Assets.xcassets */; };
@@ -58,6 +60,8 @@
 		9C23A76B22BA985100748062 /* InquiryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InquiryTableViewCell.xib; sourceTree = "<group>"; };
 		9C23A76F22BA98B600748062 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 		9C23A77022BA98B600748062 /* ButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonTableViewCell.xib; sourceTree = "<group>"; };
+		9C23A77322BAAEAD00748062 /* SecondaryBtnTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryBtnTableViewCell.swift; sourceTree = "<group>"; };
+		9C23A77422BAAEAD00748062 /* SecondaryBtnTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondaryBtnTableViewCell.xib; sourceTree = "<group>"; };
 		9CFA8E5222B9C00F00C09D93 /* PicCollage Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PicCollage Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFA8E5522B9C00F00C09D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CFA8E5A22B9C00F00C09D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 				9C23A76322BA97FD00748062 /* RatingsTableViewCell.xib */,
 				9C23A76622BA981000748062 /* ReviewTableViewCell.swift */,
 				9C23A76722BA981000748062 /* ReviewTableViewCell.xib */,
+				9C23A77322BAAEAD00748062 /* SecondaryBtnTableViewCell.swift */,
+				9C23A77422BAAEAD00748062 /* SecondaryBtnTableViewCell.xib */,
 				9C23A76A22BA985100748062 /* InquiryTableViewCell.swift */,
 				9C23A76B22BA985100748062 /* InquiryTableViewCell.xib */,
 			);
@@ -307,6 +313,7 @@
 				9CFA8E7422B9D5CF00C09D93 /* ListTableViewCell.xib in Resources */,
 				9CFA8E8822BA52E100C09D93 /* SegmentHeaderView.xib in Resources */,
 				9C23A75B22BA8B7F00748062 /* FeatureTableViewCell.xib in Resources */,
+				9C23A77622BAAEAD00748062 /* SecondaryBtnTableViewCell.xib in Resources */,
 				9CFA8E5D22B9C01100C09D93 /* Assets.xcassets in Resources */,
 				9C23A75722BA893800748062 /* InfoTableViewCell.xib in Resources */,
 				9C23A76922BA981000748062 /* ReviewTableViewCell.xib in Resources */,
@@ -378,6 +385,7 @@
 				9C23A76422BA97FD00748062 /* RatingsTableViewCell.swift in Sources */,
 				9C23A76822BA981000748062 /* ReviewTableViewCell.swift in Sources */,
 				9CFA8E7822B9E43400C09D93 /* DetailViewController.swift in Sources */,
+				9C23A77522BAAEAD00748062 /* SecondaryBtnTableViewCell.swift in Sources */,
 				9C23A76C22BA985100748062 /* InquiryTableViewCell.swift in Sources */,
 				9CFA8E7622B9D5F900C09D93 /* ListViewController.swift in Sources */,
 				9CFA8E8622BA529700C09D93 /* SegmentHeaderView.swift in Sources */,

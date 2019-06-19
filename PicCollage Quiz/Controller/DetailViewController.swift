@@ -17,7 +17,6 @@ class DetailViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,6 +27,16 @@ class DetailViewController: UIViewController {
         tableView.jh_registerCellWithNib(identifier: String(describing: InfoTableViewCell.self), bundle: nil)
         
         tableView.jh_registerCellWithNib(identifier: String(describing: FeatureTableViewCell.self), bundle: nil)
+        
+        tableView.jh_registerCellWithNib(identifier: String(describing: RatingsTableViewCell.self), bundle: nil)
+        
+        tableView.jh_registerCellWithNib(identifier: String(describing: ReviewTableViewCell.self), bundle: nil)
+        
+        tableView.jh_registerCellWithNib(identifier: String(describing: SecondaryBtnTableViewCell.self), bundle: nil)
+        
+        tableView.jh_registerCellWithNib(identifier: String(describing: InquiryTableViewCell.self), bundle: nil)
+        
+        tableView.jh_registerCellWithNib(identifier: String(describing: SectionHeaderTableViewCell.self), bundle: nil)
 
     }
 
@@ -36,13 +45,13 @@ class DetailViewController: UIViewController {
 extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
-//        switch section {
-//        case 0: return 4
-//        case 1: return 6
+        
+        switch section {
+        case 0: return 4
+        case 1: return 6
 //        case 2: return 2
-//        default: return 4
-//        }
+        default: return 0
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -65,6 +74,30 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
                 guard let infoCell = cell as? InfoTableViewCell else { return cell }
                 return infoCell
             }
+            
+        } else if indexPath.section == 1 {
+            
+            switch indexPath.row {
+            case 0:
+                let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SectionHeaderTableViewCell.self), for: indexPath) as! SectionHeaderTableViewCell
+                return cell
+                
+            case 1:
+                let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: RatingsTableViewCell.self), for: indexPath) as! RatingsTableViewCell
+                return cell
+                
+            case 4:
+                let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SecondaryBtnTableViewCell.self), for: indexPath) as! SecondaryBtnTableViewCell
+                return cell
+                
+            case 5:
+                let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: InquiryTableViewCell.self), for: indexPath) as! InquiryTableViewCell
+                return cell
+                
+            default:
+                let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ReviewTableViewCell.self), for: indexPath) as! ReviewTableViewCell
+                return cell
+            }
         }
         
         return UITableViewCell()
@@ -72,18 +105,33 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        switch (indexPath.section, indexPath.row) {
-        case (0, 0): return 600
-        case (0, 1), (0, 2): return 66
-        
-        default: return 110
+        if indexPath.section == 0 {
+            
+            switch indexPath.row {
+            case 0: return 616
+            case 3: return 110
+            default: return 66
+            }
+            
+        } else if indexPath.section == 1 {
+            
+            switch indexPath.row {
+            case 0: return 70
+            case 1: return 182
+            case 4: return 44
+            case 5: return 130
+            default: return 100
+            }
         }
+        
+        return 0
     }
     
-//    func numberOfSections(in tableView: UITableView) -> Int {
-//
-//        return 4
-//    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+
+        return 2
+    }
+    
 }
 
 extension DetailViewController: UICollectionViewDataSource, UICollectionViewDelegate {
