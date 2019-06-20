@@ -11,10 +11,24 @@ import UIKit
 class DetailViewController: UIViewController {
     
     var cafe: Cafe?
+    var isMarked = true
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var galleryCollectionView: UICollectionView!
     @IBOutlet weak var galleryIndicatorLabel: UILabel!
+    @IBOutlet weak var markBtn: UIButton!
+    
+    @IBAction func markBtnPressed(_ sender: UIButton) {
+        
+        isMarked = !isMarked
+        
+        if isMarked {
+            markBtn.isSelected = true
+        } else {
+            markBtn.isSelected = false
+        }
+    }
+    
     
     @IBAction func backBtn(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
@@ -22,6 +36,14 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        isMarked = cafe!.isMarked
+        
+        if isMarked {
+            markBtn.isSelected = true
+        } else {
+            markBtn.isSelected = false
+        }
         
         galleryCollectionView.jh_registerCellWithNib(identifier: String(describing: GalleryCollectionViewCell.self), bundle: nil)
         
@@ -115,6 +137,12 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
                 
             default:
                 let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ReviewTableViewCell.self), for: indexPath) as! ReviewTableViewCell
+                
+                if indexPath.row == 2 {
+                    cell.layoutView(reviewContent: cafe.reviews.displayReview[0])
+                } else {
+                    cell.layoutView(reviewContent: cafe.reviews.displayReview[1])
+                }
                 return cell
             }
             

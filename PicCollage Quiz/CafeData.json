@@ -33,7 +33,7 @@
 			"reviews": {
 				"ratings": {
 					"review_count": 10,
-					"average": 5,
+					"average": 4,
 					"coffee": 3.5,
 					"location": 3.5,
 					"environment": 4,
@@ -42,18 +42,18 @@
 				},
 				"display_review": [
 					{
-						"user": "profilePhoto",
+						"user": "user1",
 						"month": "January",
 						"year": "2019",
-						"rating": 3,
-						"review": "Nice late night cafe joint with some special espresso and good music."
+						"rating": 5,
+						"review": "Nice late night cafe joint with a cup of espresso and good music."
 					},
 					{
-						"user": "profilePhoto",
+						"user": "user2",
 						"month": "January",
 						"year": "2019",
-						"rating": 3,
-						"review": "Nice late night cafe joint with some special espresso and good music."
+						"rating": 3.5,
+						"review": "Coffee was great, but the sandwich was not as good."
 					}
 				]
 			},
@@ -68,17 +68,20 @@
 				{
 					"title": "cafe1",
 					"region": "台北市大安區",
-					"rating": 3.5
+					"rating": 3.5,
+					"photo": ""
 				},
 				{
 					"title": "cafe1",
 					"region": "台北市大安區",
-					"rating": 3.5
+					"rating": 3.5,
+					"photo": ""
 				},
 				{
 					"title": "cafe1",
 					"region": "台北市大安區",
-					"rating": 3.5
+					"rating": 3.5,
+					"photo": ""
 				}
 			]
 		}

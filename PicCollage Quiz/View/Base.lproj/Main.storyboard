@@ -192,6 +192,10 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22T-ns-rL3">
                                             <rect key="frame" x="336" y="16" width="15" height="22"/>
                                             <state key="normal" image="Icon_Unmarked"/>
+                                            <state key="selected" image="Icon_Marked"/>
+                                            <connections>
+                                                <action selector="markBtnPressed:" destination="ia2-4N-sZW" eventType="touchUpInside" id="Iym-Vb-LOG"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knM-wQ-tmh">
                                             <rect key="frame" x="14" y="16" width="20" height="22"/>
@@ -268,6 +272,7 @@
                     <connections>
                         <outlet property="galleryCollectionView" destination="Mqv-Qn-UQI" id="rd5-pY-YFi"/>
                         <outlet property="galleryIndicatorLabel" destination="tZD-VG-luX" id="lUX-L7-pL0"/>
+                        <outlet property="markBtn" destination="22T-ns-rL3" id="y5W-9t-dhB"/>
                         <outlet property="tableView" destination="kZe-cO-SMs" id="CvX-0a-nXv"/>
                     </connections>
                 </viewController>
@@ -339,6 +344,7 @@
         <image name="Icon_Discover" width="28" height="28"/>
         <image name="Icon_Filter" width="24" height="21"/>
         <image name="Icon_Lists" width="28" height="28"/>
+        <image name="Icon_Marked" width="15" height="19"/>
         <image name="Icon_Notes" width="24" height="25"/>
         <image name="Icon_Search" width="20" height="22"/>
         <image name="Icon_Share" width="17" height="20"/>

@@ -25,13 +25,13 @@ class ReviewTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func layoutView(userImage: String, time: String, rating: String, review: String) {
+    func layoutView(reviewContent: Review) {
         
-//        userImageView.image = UIImage(named: userImage)
+        userImageView.image = UIImage(named: reviewContent.user)
         
-        timeRateLabel.text = "\(time) | \(rating)"
+        timeRateLabel.text = "\(reviewContent.month) \(reviewContent.year) | \(reviewContent.rating)"
         
-        reviewLabel.text = review
+        reviewLabel.text = reviewContent.review
     }
     
 }

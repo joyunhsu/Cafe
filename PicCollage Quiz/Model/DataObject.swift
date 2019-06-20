@@ -96,4 +96,5 @@ struct Review: Codable {
 struct Suggestion: Codable {
     let title, region: String
     let rating: Double
+    let photo: String
 }
