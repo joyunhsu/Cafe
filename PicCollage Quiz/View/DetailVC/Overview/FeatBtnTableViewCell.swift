@@ -27,11 +27,13 @@ class FeatBtnTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func layoutView(power: Bool, kidFriendly: Bool, wifi: Bool, pets: Bool) {
-        powerPlugBtn.isEnabled = power
-        kidBtn.isEnabled = kidFriendly
-        wifiBtn.isEnabled = wifi
-        petsBtn.isEnabled = pets
+    func layoutView(cafe: Cafe) {
+        
+        let feature = cafe.overview.features
+        powerPlugBtn.isEnabled = feature.powerPlug
+        kidBtn.isEnabled = feature.kidFriendly
+        wifiBtn.isEnabled = feature.wifi
+        petsBtn.isEnabled = feature.petsAllowed
     }
     
 }

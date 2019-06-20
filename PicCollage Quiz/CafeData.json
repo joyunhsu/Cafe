@@ -27,7 +27,7 @@
 					"power_plug": true,
 					"kid_friendly": true,
 					"wifi": true,
-					"pets_allowed": true
+					"pets_allowed": false
 				}
 			},
 			"reviews": {

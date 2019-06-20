@@ -46,7 +46,17 @@ struct Overview: Codable {
 }
 
 struct Feature: Codable {
+    let powerPlug: Bool
+    let kidFriendly: Bool
+    let wifi: Bool
+    let petsAllowed: Bool
     
+    enum CodingKeys: String, CodingKey {
+        case powerPlug = "power_plug"
+        case kidFriendly = "kid_friendly"
+        case wifi
+        case petsAllowed = "pets_allowed"
+    }
 }
 
 struct Reviews: Codable {

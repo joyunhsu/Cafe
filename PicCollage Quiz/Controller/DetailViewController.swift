@@ -76,12 +76,20 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
                 
             case 3:
                 let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: FeatBtnTableViewCell.self), for: indexPath) as! FeatBtnTableViewCell
+                cell.layoutView(cafe: cafe)
                 return cell
                 
             default:
-                let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: InfoTableViewCell.self), for: indexPath)
-                guard let infoCell = cell as? InfoTableViewCell else { return cell }
-                return infoCell
+                let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: InfoTableViewCell.self), for: indexPath) as! InfoTableViewCell
+                
+                let overview = cafe.overview
+                if indexPath.row == 1 {
+                    cell.layoutView(title: "Phone", info: overview.phone)
+                } else {
+                    cell.layoutView(title: "Website", info: overview.website)
+                }
+                
+                return cell
             }
             
         } else if indexPath.section == 1 {
