@@ -147,6 +147,15 @@
 			path = Photos;
 			sourceTree = "<group>";
 		};
+		9C23A78722BB18B500748062 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				9CFA8E7F22BA170500C09D93 /* GalleryCollectionViewCell.swift */,
+				9CFA8E8022BA170500C09D93 /* GalleryCollectionViewCell.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 		9CFA8E4922B9C00F00C09D93 = {
 			isa = PBXGroup;
 			children = (
@@ -230,11 +239,10 @@
 		9CFA8E8A22BA56BB00C09D93 /* DetailVC */ = {
 			isa = PBXGroup;
 			children = (
+				9C23A78722BB18B500748062 /* Header */,
 				9C23A76022BA97C400748062 /* Overview */,
 				9C23A76122BA97D800748062 /* Reviews */,
 				9C23A76E22BA987400748062 /* Photos */,
-				9CFA8E7F22BA170500C09D93 /* GalleryCollectionViewCell.swift */,
-				9CFA8E8022BA170500C09D93 /* GalleryCollectionViewCell.xib */,
 				9CFA8E8522BA529700C09D93 /* SegmentHeaderView.swift */,
 				9CFA8E8722BA52E100C09D93 /* SegmentHeaderView.xib */,
 				9C23A75C22BA937C00748062 /* SectionHeaderTableViewCell.swift */,

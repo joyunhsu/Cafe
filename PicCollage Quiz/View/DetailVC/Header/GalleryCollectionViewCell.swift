@@ -9,10 +9,17 @@
 import UIKit
 
 class GalleryCollectionViewCell: UICollectionViewCell {
+    
+    @IBOutlet weak var imageView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    func layoutView(name: String) {
+        
+        imageView.image = UIImage(named: name)
     }
 
 }

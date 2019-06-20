@@ -12,6 +12,7 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var galleryCollectionView: UICollectionView!
+    @IBOutlet weak var galleryIndicatorLabel: UILabel!
     
     @IBAction func backBtn(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
@@ -41,7 +42,8 @@ class DetailViewController: UIViewController {
         tableView.jh_registerCellWithNib(identifier: String(describing: PhotoTableViewCell.self), bundle: nil)
         
         tableView.jh_registerCellWithNib(identifier: String(describing: ListTableViewCell.self), bundle: nil)
-
+        
+        galleryIndicatorLabel.text = "1/4"
     }
 
 }
@@ -134,7 +136,6 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         if indexPath.section == 0 {
-            
             switch indexPath.row {
             case 0: return 616
             case 3: return 110
@@ -142,7 +143,6 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
             }
             
         } else if indexPath.section == 1 {
-            
             switch indexPath.row {
             case 0: return 70
             case 1: return 182
@@ -152,14 +152,12 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
             }
             
         } else if indexPath.section == 2 {
-            
             switch indexPath.row {
             case 0: return 70
             default: return 214
             }
             
         } else {
-            
             switch indexPath.row {
             case 0: return 70
             default: return 118
@@ -186,11 +184,17 @@ extension DetailViewController: UICollectionViewDataSource, UICollectionViewDele
     
         let cell = galleryCollectionView.dequeueReusableCell(
             withReuseIdentifier: String(describing: GalleryCollectionViewCell.self),
-            for: indexPath)
+            for: indexPath) as! GalleryCollectionViewCell
         
-        guard let galleryCell = cell as? GalleryCollectionViewCell else { return cell }
+//        cell.layoutView(name: "")
         
-        return galleryCell
+        if indexPath.item % 2 == 0 {
+            cell.backgroundColor = UIColor.Blue!
+        } else {
+            cell.backgroundColor = UIColor.B2!
+        }
+        
+        return cell
     }
     
 //    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -200,4 +204,28 @@ extension DetailViewController: UICollectionViewDataSource, UICollectionViewDele
 //        return view
 //    }
     
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        let screenWidth = UIScreen.main.bounds.width
+        
+        let page = lroundf(Float(scrollView.contentOffset.x / screenWidth)) + 1
+        
+        galleryIndicatorLabel.text = "\(page)/4"
+    }
+    
+}
+
+extension DetailViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let screenWidth = view.frame.width
+        
+        return CGSize(width: screenWidth, height: 200)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        
+        return 0
+    }
 }
