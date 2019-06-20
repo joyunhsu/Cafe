@@ -39,7 +39,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xYP-PG-SbO" userLabel="Rate View">
-                        <rect key="frame" x="20" y="78" width="115" height="16"/>
+                        <rect key="frame" x="20" y="78" width="120" height="16"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nft-VJ-76B" customClass="CosmosView" customModule="Cosmos">
                                 <rect key="frame" x="0.0" y="1" width="85" height="13"/>
@@ -67,9 +67,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lp2-ta-qle">
-                                <rect key="frame" x="94" y="0.0" width="19" height="16"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lp2-ta-qle">
+                                <rect key="frame" x="94" y="0.0" width="26" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" name="B1"/>
                                 <nil key="highlightedColor"/>
@@ -79,9 +78,13 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="16" id="1Hj-mY-tgd"/>
                             <constraint firstItem="Nft-VJ-76B" firstAttribute="leading" secondItem="xYP-PG-SbO" secondAttribute="leading" id="4gh-vf-JCh"/>
+                            <constraint firstAttribute="width" constant="120" id="APg-bS-ZIL"/>
+                            <constraint firstItem="lp2-ta-qle" firstAttribute="leading" secondItem="Nft-VJ-76B" secondAttribute="trailing" constant="9" id="CrS-Dh-ot6"/>
                             <constraint firstItem="Nft-VJ-76B" firstAttribute="top" secondItem="xYP-PG-SbO" secondAttribute="top" constant="1" id="Gua-cJ-9Vh"/>
-                            <constraint firstAttribute="width" constant="115" id="MLp-ZJ-36L"/>
+                            <constraint firstItem="lp2-ta-qle" firstAttribute="top" secondItem="xYP-PG-SbO" secondAttribute="top" id="gKn-ac-sqB"/>
                             <constraint firstAttribute="bottom" secondItem="Nft-VJ-76B" secondAttribute="bottom" constant="2" id="iaY-eL-mnY"/>
+                            <constraint firstAttribute="bottom" secondItem="lp2-ta-qle" secondAttribute="bottom" id="mxy-Yj-258"/>
+                            <constraint firstAttribute="trailing" secondItem="lp2-ta-qle" secondAttribute="trailing" id="pxr-He-CEk"/>
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yui-g2-T3y" userLabel="Tmie Limit View">

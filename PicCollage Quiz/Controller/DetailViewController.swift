@@ -10,6 +10,8 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
+    var cafe: Cafe?
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var galleryCollectionView: UICollectionView!
     @IBOutlet weak var galleryIndicatorLabel: UILabel!
@@ -43,7 +45,7 @@ class DetailViewController: UIViewController {
         
         tableView.jh_registerCellWithNib(identifier: String(describing: ListTableViewCell.self), bundle: nil)
         
-        galleryIndicatorLabel.text = "1/4"
+        galleryIndicatorLabel.text = "1/\(cafe!.photos.count)"
     }
 
 }
@@ -62,11 +64,14 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        guard let cafe = cafe else { return UITableViewCell() }
+        
         if indexPath.section == 0 {
             
             switch indexPath.row {
             case 0:
                 let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: OverviewTableViewCell.self), for: indexPath) as! OverviewTableViewCell
+                cell.layoutView(cafe: cafe)
                 return cell
                 
             case 3:
@@ -175,7 +180,9 @@ extension DetailViewController: UICollectionViewDataSource, UICollectionViewDele
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return 4
+        guard let photos = cafe?.photos else { return 0 }
+        
+        return photos.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -184,7 +191,9 @@ extension DetailViewController: UICollectionViewDataSource, UICollectionViewDele
             withReuseIdentifier: String(describing: GalleryCollectionViewCell.self),
             for: indexPath) as! GalleryCollectionViewCell
         
-//        cell.layoutView(name: "")
+        guard let cafe = cafe else { return cell }
+        
+        cell.layoutView(photo: cafe.photos[indexPath.item])
         
         if indexPath.item % 2 == 0 {
             cell.backgroundColor = UIColor.Blue!
@@ -208,7 +217,7 @@ extension DetailViewController: UICollectionViewDataSource, UICollectionViewDele
         
         let page = lroundf(Float(scrollView.contentOffset.x / screenWidth)) + 1
         
-        galleryIndicatorLabel.text = "\(page)/4"
+        galleryIndicatorLabel.text = "\(page)/\(cafe!.photos.count)"
     }
     
 }

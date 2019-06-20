@@ -49,10 +49,13 @@ class ListViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+
         if let destination = segue.destination as? DetailViewController {
             
-            
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+             
+                destination.cafe = cafes[indexPath.row]
+            }
         }
     }
 
@@ -63,6 +66,7 @@ extension ListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         performSegue(withIdentifier: "DetailSegue", sender: nil)
+        
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

@@ -17,9 +17,9 @@ class GalleryCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
     
-    func layoutView(name: String) {
+    func layoutView(photo: String) {
         
-        imageView.image = UIImage(named: name)
+        imageView.image = UIImage(named: photo)
     }
 
 }

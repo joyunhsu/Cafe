@@ -36,7 +36,15 @@ class OverviewTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func layoutView() {
+    func layoutView(cafe: Cafe) {
+        regionLabel.text = cafe.region
+        titleLabel.text = cafe.title
+        cosmosView.rating = cafe.rating
+        ratingLabel.text = "\(cafe.rating)"
         
+        let overView = cafe.overview
+        timeLimitLabel.text = "\(overView.timeLimit) hr"
+        averageCostLabel.text = "$\(overView.averageCost)"
+        addressLabel.text = overView.address
     }
 }

@@ -30,9 +30,11 @@ class ListTableViewCell: UITableViewCell {
     
     func layoutView(cafe: Cafe) {
         
-//        cafeImage.image = UIImage(named: cafe.photos[0])
+        cafeImage.image = UIImage(named: cafe.photos[0])
         cafeTitle.text = cafe.title
         rateView.rating = cafe.rating
+        ratingLabel.text = String(cafe.rating)
+        briefLabel.text = "\(cafe.region)  \(cafe.distance)  \(cafe.reviewCount) Reviews"
     }
     
 }
