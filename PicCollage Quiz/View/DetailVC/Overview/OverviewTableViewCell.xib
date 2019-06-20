@@ -336,6 +336,9 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="directionBtn" destination="10P-XW-iFY" id="flz-FU-vjs"/>
+            </connections>
             <point key="canvasLocation" x="138.40579710144928" y="325.44642857142856"/>
         </tableViewCell>
     </objects>

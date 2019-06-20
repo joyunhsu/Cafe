@@ -9,10 +9,14 @@
 import UIKit
 
 class OverviewTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var directionBtn: UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        directionBtn.setTitle("Directions\n5 min walk", for: .normal)
         
     }
 

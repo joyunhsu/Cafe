@@ -166,7 +166,6 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
             }
         }
         
-        return 0
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -200,6 +199,5 @@ extension DetailViewController: UICollectionViewDataSource, UICollectionViewDele
 //
 //        return view
 //    }
-    
     
 }
