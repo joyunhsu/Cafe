@@ -14,7 +14,7 @@ struct CafeData: Codable {
 
 struct Cafe: Codable {
     let title, region: String
-    let rating: Int
+    let rating: Double
     let isMarked: Bool
     let overview: Overview
     let reviews: Reviews
@@ -31,5 +31,6 @@ struct Reviews: Codable {
 }
 
 struct Suggestion: Codable {
-    
+    let title, region: String
+    let rating: Double
 }

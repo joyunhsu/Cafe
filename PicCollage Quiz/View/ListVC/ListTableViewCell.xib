@@ -108,9 +108,11 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="briefLabel" destination="sQg-Xq-4qT" id="7cF-Yh-1iN"/>
                 <outlet property="cafeImage" destination="GmH-b3-WI8" id="7AM-Gs-pik"/>
                 <outlet property="cafeTitle" destination="YCS-d2-bGx" id="e39-dg-0JV"/>
                 <outlet property="rateView" destination="yND-tx-4wg" id="13l-pY-xMi"/>
+                <outlet property="ratingLabel" destination="bfB-Xd-gq7" id="lTP-sh-xzh"/>
             </connections>
             <point key="canvasLocation" x="18" y="9"/>
         </tableViewCell>

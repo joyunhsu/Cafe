@@ -65,17 +65,17 @@
 				{
 					"title": "cafe1",
 					"region": "台北市大安區",
-					"average_rating": 3.5
+					"rating": 3.5
 				},
 				{
 					"title": "cafe1",
 					"region": "台北市大安區",
-					"average_rating": 3.5
+					"rating": 3.5
 				},
 				{
 					"title": "cafe1",
 					"region": "台北市大安區",
-					"average_rating": 3.5
+					"rating": 3.5
 				}
 			]
 		}

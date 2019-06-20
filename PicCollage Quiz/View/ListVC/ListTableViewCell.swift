@@ -14,6 +14,8 @@ class ListTableViewCell: UITableViewCell {
     @IBOutlet weak var cafeImage: UIImageView!
     @IBOutlet weak var cafeTitle: UILabel!
     @IBOutlet weak var rateView: CosmosView!
+    @IBOutlet weak var ratingLabel: UILabel!
+    @IBOutlet weak var briefLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,6 +26,13 @@ class ListTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func layoutView(cafe: Cafe) {
+        
+//        cafeImage.image = UIImage(named: cafe.photos[0])
+        cafeTitle.text = cafe.title
+        rateView.rating = cafe.rating
     }
     
 }

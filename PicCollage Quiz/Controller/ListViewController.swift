@@ -15,6 +15,8 @@ class ListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var tagsCollectionVIew: UICollectionView!
+    
+    var cafes = [Cafe]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +44,16 @@ class ListViewController: UIViewController {
         let cafeData: CafeData = try! decoder.decode(CafeData.self, from: data)
         
         print(cafeData)
+        
+        cafes = cafeData.data
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let destination = segue.destination as? DetailViewController {
+            
+            
+        }
     }
 
 }
@@ -60,7 +72,7 @@ extension ListViewController: UITableViewDelegate {
         let label = UILabel()
         label.text = "Sorted by Distance"
         label.font = UIFont.systemFont(ofSize: 13, weight: .semibold)
-        label.textColor = UIColor(red: 65/255, green: 108/255, blue: 207/255, alpha: 1)
+        label.textColor = UIColor.Blue!
         label.frame = CGRect(x: 20, y: 5, width: 200, height: 18)
         view.addSubview(label)
         
@@ -73,7 +85,7 @@ extension ListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 4
+        return cafes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -81,6 +93,8 @@ extension ListViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ListTableViewCell.self), for: indexPath)
         
         guard let listCell = cell as? ListTableViewCell else { return cell }
+        
+        listCell.layoutView(cafe: cafes[indexPath.row])
         
         listCell.selectionStyle = .none
         
