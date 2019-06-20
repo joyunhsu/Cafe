@@ -9,6 +9,10 @@
 import UIKit
 
 class ReviewTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var userImageView: UIImageView!
+    @IBOutlet weak var timeRateLabel: UILabel!
+    @IBOutlet weak var reviewLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,6 +23,14 @@ class ReviewTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func layoutView(userImage: String, time: String, rating: String, review: String) {
+        
+        userImageView.image = UIImage(named: userImage)
+        timeRateLabel.text = "\(time) | \(rating)"
+        
+        reviewLabel.text = review
     }
     
 }

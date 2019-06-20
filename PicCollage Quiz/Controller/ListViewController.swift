@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 let tags: [String] = ["WIFI", "POWER PLUG", "FOOD", "NO TIME LIMITS"]
 
@@ -23,6 +24,24 @@ class ListViewController: UIViewController {
             bundle: nil)
         
         self.navigationController?.isNavigationBarHidden = true
+        
+        let path = Bundle.main.path(forResource: "CafeData", ofType: "json")
+        
+        let url = URL(fileURLWithPath: path!)
+        
+        let data = try! Data(contentsOf: url)
+        
+        print(data)
+        
+        let obj = try! JSONSerialization.jsonObject(with: data, options: .allowFragments)
+        
+        print(obj)
+        
+        let decoder = JSONDecoder()
+        
+        let cafeData: CafeData = try! decoder.decode(CafeData.self, from: data)
+        
+        print(cafeData)
     }
 
 }

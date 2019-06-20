@@ -19,6 +19,7 @@ class PhotoTableViewCell: UITableViewCell, UICollectionViewDataSource, UICollect
         photoCollectionView.dataSource = self
         photoCollectionView.delegate = self
         photoCollectionView.jh_registerCellWithNib(identifier: String(describing: PhotoCollectionViewCell.self), bundle: nil)
+        photoCollectionView.jh_registerCellWithNib(identifier: String(describing: LastPhotoCollectionViewCell.self), bundle: nil)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -33,10 +34,17 @@ class PhotoTableViewCell: UITableViewCell, UICollectionViewDataSource, UICollect
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = photoCollectionView.dequeueReusableCell(withReuseIdentifier: String(describing: PhotoCollectionViewCell.self), for: indexPath) as! PhotoCollectionViewCell
-        return cell
+        switch indexPath.item {
+            
+        case 3:
+            let cell = photoCollectionView.dequeueReusableCell(withReuseIdentifier: String(describing: LastPhotoCollectionViewCell.self), for: indexPath)
+            return cell
+            
+        default:
+            let cell = photoCollectionView.dequeueReusableCell(withReuseIdentifier: String(describing: PhotoCollectionViewCell.self), for: indexPath) as! PhotoCollectionViewCell
+            return cell
+        }
     }
-    
 }
 
 extension PhotoTableViewCell: UICollectionViewDelegateFlowLayout {

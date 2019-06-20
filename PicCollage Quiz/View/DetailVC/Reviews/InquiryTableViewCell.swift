@@ -9,7 +9,9 @@
 import UIKit
 
 class InquiryTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var profileImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

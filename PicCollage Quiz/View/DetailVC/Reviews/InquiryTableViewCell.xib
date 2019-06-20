@@ -45,7 +45,7 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </button>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U4g-fH-WnI">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile" translatesAutoresizingMaskIntoConstraints="NO" id="U4g-fH-WnI">
                         <rect key="frame" x="161.5" y="27.5" width="52" height="52"/>
                         <color key="backgroundColor" name="Green1"/>
                         <constraints>
@@ -70,10 +70,14 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="profileImageView" destination="U4g-fH-WnI" id="77V-9R-P1O"/>
+            </connections>
             <point key="canvasLocation" x="48.550724637681164" y="41.517857142857139"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="Profile" width="460" height="460"/>
         <namedColor name="B1">
             <color red="0.40392156862745099" green="0.40392156862745099" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

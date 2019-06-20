@@ -309,6 +309,15 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="averageRating" destination="BXX-7Y-eHu" id="FlH-CB-qzf"/>
+                <outlet property="coffeeRating" destination="RYN-GD-d0y" id="QxC-TG-ab3"/>
+                <outlet property="environmentRating" destination="KyY-sl-Qf6" id="CcJ-kl-Wje"/>
+                <outlet property="locationRating" destination="34M-Gx-QiL" id="Oc0-O6-S33"/>
+                <outlet property="reviewCount" destination="aWL-ew-TtG" id="VvC-ia-aUD"/>
+                <outlet property="serviceRating" destination="9ro-XO-uPE" id="FkZ-xC-22Z"/>
+                <outlet property="valueRating" destination="va5-Y8-W36" id="P8U-G2-mNx"/>
+            </connections>
             <point key="canvasLocation" x="48.550724637681164" y="34.821428571428569"/>
         </tableViewCell>
     </objects>

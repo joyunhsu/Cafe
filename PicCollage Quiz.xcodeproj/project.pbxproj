@@ -29,6 +29,10 @@
 		9C23A78622BB101B00748062 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C23A78522BB101B00748062 /* UIColor+Extension.swift */; };
 		9CED4E1F22BB2FCC00C5D172 /* FeatBtnTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CED4E1D22BB2FCC00C5D172 /* FeatBtnTableViewCell.swift */; };
 		9CED4E2022BB2FCC00C5D172 /* FeatBtnTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CED4E1E22BB2FCC00C5D172 /* FeatBtnTableViewCell.xib */; };
+		9CED4E2322BB42B100C5D172 /* LastPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CED4E2122BB42B100C5D172 /* LastPhotoCollectionViewCell.swift */; };
+		9CED4E2422BB42B100C5D172 /* LastPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CED4E2222BB42B100C5D172 /* LastPhotoCollectionViewCell.xib */; };
+		9CED4E2622BB734400C5D172 /* CafeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9CED4E2522BB734400C5D172 /* CafeData.json */; };
+		9CED4E2822BB748C00C5D172 /* DataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CED4E2722BB748C00C5D172 /* DataObject.swift */; };
 		9CFA8E5622B9C00F00C09D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFA8E5522B9C00F00C09D93 /* AppDelegate.swift */; };
 		9CFA8E5B22B9C00F00C09D93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFA8E5922B9C00F00C09D93 /* Main.storyboard */; };
 		9CFA8E5D22B9C01100C09D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CFA8E5C22B9C01100C09D93 /* Assets.xcassets */; };
@@ -74,6 +78,10 @@
 		9C23A78522BB101B00748062 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		9CED4E1D22BB2FCC00C5D172 /* FeatBtnTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatBtnTableViewCell.swift; sourceTree = "<group>"; };
 		9CED4E1E22BB2FCC00C5D172 /* FeatBtnTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeatBtnTableViewCell.xib; sourceTree = "<group>"; };
+		9CED4E2122BB42B100C5D172 /* LastPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		9CED4E2222BB42B100C5D172 /* LastPhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LastPhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		9CED4E2522BB734400C5D172 /* CafeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CafeData.json; sourceTree = "<group>"; };
+		9CED4E2722BB748C00C5D172 /* DataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataObject.swift; sourceTree = "<group>"; };
 		9CFA8E5222B9C00F00C09D93 /* PicCollage Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PicCollage Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFA8E5522B9C00F00C09D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CFA8E5A22B9C00F00C09D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -143,6 +151,8 @@
 				9C23A77822BABB8200748062 /* PhotoTableViewCell.xib */,
 				9C23A77B22BAC10200748062 /* PhotoCollectionViewCell.swift */,
 				9C23A77C22BAC10200748062 /* PhotoCollectionViewCell.xib */,
+				9CED4E2122BB42B100C5D172 /* LastPhotoCollectionViewCell.swift */,
+				9CED4E2222BB42B100C5D172 /* LastPhotoCollectionViewCell.xib */,
 			);
 			path = Photos;
 			sourceTree = "<group>";
@@ -178,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				9CFA8E5522B9C00F00C09D93 /* AppDelegate.swift */,
+				9CED4E2522BB734400C5D172 /* CafeData.json */,
 				9CFA8E6722B9D1D700C09D93 /* Extension */,
 				9CFA8E6A22B9D24600C09D93 /* Controller */,
 				9CFA8E6C22B9D26B00C09D93 /* Model */,
@@ -222,6 +233,7 @@
 		9CFA8E6C22B9D26B00C09D93 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9CED4E2722BB748C00C5D172 /* DataObject.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -331,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CFA8E6022B9C01100C09D93 /* LaunchScreen.storyboard in Resources */,
+				9CED4E2422BB42B100C5D172 /* LastPhotoCollectionViewCell.xib in Resources */,
 				9CFA8E8222BA170500C09D93 /* GalleryCollectionViewCell.xib in Resources */,
 				9C23A76522BA97FD00748062 /* RatingsTableViewCell.xib in Resources */,
 				9C23A77222BA98B600748062 /* ButtonTableViewCell.xib in Resources */,
@@ -343,6 +356,7 @@
 				9C23A77622BAAEAD00748062 /* SecondaryBtnTableViewCell.xib in Resources */,
 				9CFA8E5D22B9C01100C09D93 /* Assets.xcassets in Resources */,
 				9C23A75722BA893800748062 /* InfoTableViewCell.xib in Resources */,
+				9CED4E2622BB734400C5D172 /* CafeData.json in Resources */,
 				9C23A76922BA981000748062 /* ReviewTableViewCell.xib in Resources */,
 				9C23A77E22BAC10200748062 /* PhotoCollectionViewCell.xib in Resources */,
 				9CFA8E5B22B9C00F00C09D93 /* Main.storyboard in Resources */,
@@ -409,7 +423,9 @@
 				9C23A78622BB101B00748062 /* UIColor+Extension.swift in Sources */,
 				9C23A78422BB0B6300748062 /* TagCollectionViewCell.swift in Sources */,
 				9CFA8E7E22BA156700C09D93 /* UITableView+Extension.swift in Sources */,
+				9CED4E2822BB748C00C5D172 /* DataObject.swift in Sources */,
 				9CFA8E8122BA170500C09D93 /* GalleryCollectionViewCell.swift in Sources */,
+				9CED4E2322BB42B100C5D172 /* LastPhotoCollectionViewCell.swift in Sources */,
 				9CFA8E6922B9D20700C09D93 /* UIView+Extension.swift in Sources */,
 				9CED4E1F22BB2FCC00C5D172 /* FeatBtnTableViewCell.swift in Sources */,
 				9CFA8E7322B9D5CF00C09D93 /* ListTableViewCell.swift in Sources */,

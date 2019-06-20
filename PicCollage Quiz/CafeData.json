@@ -1,0 +1,83 @@
+{
+	"data": [
+		{
+			"title": "西雅圖極品咖啡 台大店",
+			"region": "台北市，大安區",
+			"rating": 4,
+			"isMarked": true,
+			"overview": {
+				"time_limit": 2,
+				"average_cost": "101-200",
+				"isOpen": true,
+				"open_hour": {
+					"Monday": ["09:00", "20:00"],
+					"Tuesday": ["09:00", "20:00"],
+					"Wednesday": ["09:00", "20:00"],
+					"Thursday": ["09:00", "20:00"],
+					"Friday": ["09:00", "20:00"],
+					"Saturday": ["09:00", "20:00"],
+					"Sunday": ["09:00", "20:00"]
+				},
+				"address": "No. 88, Section 3, Xinsheng South Road, Da’an District, Taipei City, Taiwan 106",
+				"phone": "+886 2 2396 6689",
+				"website": "https://www.facebook.com",
+				"features": {
+					"power_plug": true,
+					"kid_friendly": true,
+					"wifi": true,
+					"pets_allowed": true
+				}
+			},
+			"reviews": {
+				"ratings": {
+					"review_count": 10,
+					"average": 5,
+					"coffee": 3.5,
+					"location": 3.5,
+					"environment": 4,
+					"service": 4,
+					"value": 4
+				},
+				"display_review": [
+					{
+						"user": "profilePhoto",
+						"month": "January",
+						"year": "2019",
+						"rating": 3,
+						"review": "Nice late night cafe joint with some special espresso and good music."
+					},
+					{
+						"user": "profilePhoto",
+						"month": "January",
+						"year": "2019",
+						"rating": 3,
+						"review": "Nice late night cafe joint with some special espresso and good music."
+					}
+				]
+			},
+			"photos": [
+				"photoName1",
+				"photoName2",
+				"photoName3",
+				"photoName4"
+			],
+			"suggestions": [
+				{
+					"title": "cafe1",
+					"region": "台北市大安區",
+					"average_rating": 3.5
+				},
+				{
+					"title": "cafe1",
+					"region": "台北市大安區",
+					"average_rating": 3.5
+				},
+				{
+					"title": "cafe1",
+					"region": "台北市大安區",
+					"average_rating": 3.5
+				}
+			]
+		}
+	]
+}
