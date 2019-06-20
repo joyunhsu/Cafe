@@ -1,89 +1,189 @@
 {
-	"data": [
-		{
-			"title": "西雅圖極品咖啡 台大店",
-			"region": "台北市,大安區",
-			"rating": 4,
-			"review_count": 10,
-			"distance": "250m",
-			"isMarked": true,
-			"overview": {
-				"time_limit": 2,
-				"average_cost": "101-200",
-				"isOpen": true,
-				"open_hour": {
-					"Monday": ["09:00", "20:00"],
-					"Tuesday": ["09:00", "20:00"],
-					"Wednesday": ["09:00", "20:00"],
-					"Thursday": ["09:00", "20:00"],
-					"Friday": ["09:00", "20:00"],
-					"Saturday": ["09:00", "20:00"],
-					"Sunday": ["09:00", "20:00"]
-				},
-				"address": "No. 88, Section 3, Xinsheng South Road, Da’an District, Taipei City, Taiwan 106",
-				"phone": "+886 2 2396 6689",
-				"website": "https://www.facebook.com/cafesugarman/",
-				"features": {
-					"power_plug": true,
-					"kid_friendly": true,
-					"wifi": true,
-					"pets_allowed": false
-				}
-			},
-			"reviews": {
-				"ratings": {
-					"review_count": 10,
-					"average": 4,
-					"coffee": 3.5,
-					"location": 3.5,
-					"environment": 4,
-					"service": 4,
-					"value": 4
-				},
-				"display_review": [
-					{
-						"user": "user1",
-						"month": "January",
-						"year": "2019",
-						"rating": 5,
-						"review": "Nice late night cafe joint with a cup of espresso and good music."
-					},
-					{
-						"user": "user2",
-						"month": "January",
-						"year": "2019",
-						"rating": 3.5,
-						"review": "Coffee was great, but the sandwich was not as good."
-					}
-				]
-			},
-			"photos": [
-				"BaristaCoffee1",
-				"BaristaCoffee2",
-				"BaristaCoffee3",
-				"BaristaCoffee4",
-				"BaristaCoffee5"
-			],
-			"suggestions": [
-				{
-					"title": "cafe1",
-					"region": "台北市大安區",
-					"rating": 3.5,
-					"photo": ""
-				},
-				{
-					"title": "cafe1",
-					"region": "台北市大安區",
-					"rating": 3.5,
-					"photo": ""
-				},
-				{
-					"title": "cafe1",
-					"region": "台北市大安區",
-					"rating": 3.5,
-					"photo": ""
-				}
-			]
-		}
-	]
+    "data": [
+        {
+            "title": "西雅圖極品咖啡 台大店",
+            "region": "台北市,大安區",
+            "rating": 4,
+            "review_count": 10,
+            "distance": "250m",
+            "isMarked": false,
+            "overview": {
+                "time_limit": "2 hr",
+                "average_cost": "101-200",
+                "isOpen": true,
+                "open_hour": {
+                    "Monday": ["09:00", "20:00"],
+                    "Tuesday": ["09:00", "20:00"],
+                    "Wednesday": ["09:00", "20:00"],
+                    "Thursday": ["09:00", "20:00"],
+                    "Friday": ["09:00", "20:00"],
+                    "Saturday": ["09:00", "20:00"],
+                    "Sunday": ["09:00", "20:00"]
+                },
+                "address": "No. 88, Section 3, Xinsheng South Road, Da’an District, Taipei City, Taiwan 106",
+                "phone": "+886 2 2396 6689",
+                "website": "https://www.facebook.com/cafesugarman/",
+                "features": {
+                    "power_plug": true,
+                    "kid_friendly": true,
+                    "wifi": true,
+                    "pets_allowed": false
+                }
+            },
+            "reviews": {
+                "ratings": {
+                    "review_count": 10,
+                    "average": 4,
+                    "coffee": 3.5,
+                    "location": 3.5,
+                    "environment": 4,
+                    "service": 4,
+                    "value": 4
+                },
+                "display_review": [
+                    {
+                        "user": "user1",
+                        "month": "January",
+                        "year": "2019",
+                        "rating": 5,
+                        "review": "Nice late night cafe joint with a cup of espresso and good music."
+                    },
+                    {
+                        "user": "user2",
+                        "month": "January",
+                        "year": "2019",
+                        "rating": 3.5,
+                        "review": "Coffee was great, but the sandwich was not as good."
+                    }
+                ]
+            },
+            "photos": [
+                "BaristaCoffee1",
+                "BaristaCoffee2",
+                "BaristaCoffee3",
+                "BaristaCoffee4",
+                "BaristaCoffee5"
+            ],
+            "suggestions": [
+                {
+                    "title": "精品咖啡",
+                    "region": "台北市大安區",
+                    "rating": 4.4,
+                    "photo": "LaBelleCoffee1",
+                    "distance": "400m",
+                    "review_count": 12
+                },
+                {
+                    "title": "La Belle Coffee",
+                    "region": "台北市大安區",
+                    "rating": 4.2,
+                    "photo": "LaBelleCoffee4",
+                    "distance": "650m",
+                    "review_count": 7
+                },
+                {
+                    "title": "cafe1",
+                    "region": "台北市大安區",
+                    "rating": 3.5,
+                    "photo": "LaBelleCoffee5",
+                    "distance": "1.2km",
+                    "review_count": 11
+                }
+            ]
+        },
+        {
+            "title": "精品咖啡",
+            "region": "台北市,大安區",
+            "rating": 4.4,
+            "review_count": 12,
+            "distance": "400m",
+            "isMarked": true,
+            "overview": {
+                "time_limit": "None",
+                "average_cost": "201-300",
+                "isOpen": true,
+                "open_hour": {
+                    "Monday": ["09:00", "20:00"],
+                    "Tuesday": ["09:00", "20:00"],
+                    "Wednesday": ["09:00", "20:00"],
+                    "Thursday": ["09:00", "20:00"],
+                    "Friday": ["09:00", "20:00"],
+                    "Saturday": ["09:00", "20:00"],
+                    "Sunday": ["09:00", "20:00"]
+                },
+                "address": "106, Taiwan, Taipei City, Da'an District, 金華街247號",
+                "phone": "+886 2 2327 9937",
+                "website": "https://www.facebook.com/laBelleCoffee/",
+                "features": {
+                    "power_plug": false,
+                    "kid_friendly": false,
+                    "wifi": true,
+                    "pets_allowed": true
+                }
+            },
+            "reviews": {
+                "ratings": {
+                    "review_count": 12,
+                    "average": 4.4,
+                    "coffee": 5,
+                    "location": 3.5,
+                    "environment": 4,
+                    "service": 4,
+                    "value": 4
+                },
+                "display_review": [
+                    {
+                        "user": "user3",
+                        "month": "March",
+                        "year": "2019",
+                        "rating": 4,
+                        "review": "Deep in the alley, a quiet place for quality time."
+                    },
+                    {
+                        "user": "user4",
+                        "month": "November",
+                        "year": "2018",
+                        "rating": 4.5,
+                        "review": "Very nice ambience, good coffee with lots of varieties to choose from."
+                    }
+                ]
+            },
+            "photos": [
+                "LaBelleCoffee1",
+                "LaBelleCoffee2",
+                "LaBelleCoffee3",
+                "LaBelleCoffee4",
+                "LaBelleCoffee5",
+                "LaBelleCoffee1",
+                "LaBelleCoffee2",
+                "LaBelleCoffee3"
+            ],
+            "suggestions": [
+                {
+                    "title": "精品咖啡",
+                    "region": "台北市大安區",
+                    "rating": 4.4,
+                    "photo": "LaBelleCoffee1",
+                    "distance": "400m",
+                    "review_count": 12
+                },
+                {
+                    "title": "La Belle Coffee",
+                    "region": "台北市大安區",
+                    "rating": 4.2,
+                    "photo": "LaBelleCoffee4",
+                    "distance": "650m",
+                    "review_count": 7
+                },
+                {
+                    "title": "cafe1",
+                    "region": "台北市大安區",
+                    "rating": 3.5,
+                    "photo": "LaBelleCoffee5",
+                    "distance": "1.2km",
+                    "review_count": 11
+                }
+            ]
+        }
+    ]
 }

@@ -56,6 +56,7 @@ class ListViewController: UIViewController {
              
                 destination.cafe = cafes[indexPath.row]
             }
+
         }
     }
 

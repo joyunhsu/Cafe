@@ -31,7 +31,7 @@ struct Cafe: Codable {
 }
 
 struct Overview: Codable {
-    let timeLimit: Double
+    let timeLimit: String
     let averageCost: String
     let isOpen: Bool
     let address: String
@@ -97,4 +97,12 @@ struct Suggestion: Codable {
     let title, region: String
     let rating: Double
     let photo: String
+    let distance: String
+    let reviewCount: Int
+    
+    enum CodingKeys: String, CodingKey {
+        case reviewCount = "review_count"
+        case title, region, rating
+        case photo, distance
+    }
 }

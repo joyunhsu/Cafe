@@ -37,4 +37,13 @@ class ListTableViewCell: UITableViewCell {
         briefLabel.text = "\(cafe.region)  \(cafe.distance)  \(cafe.reviewCount) Reviews"
     }
     
+    func layoutView(suggestion: Suggestion) {
+        
+        cafeImage.image = UIImage(named: suggestion.photo)
+        cafeTitle.text = suggestion.title
+        rateView.rating = suggestion.rating
+        ratingLabel.text = String(suggestion.rating)
+        briefLabel.text = "\(suggestion.region)  \(suggestion.distance)  \(suggestion.reviewCount) Reviews"
+    }
+    
 }

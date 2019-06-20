@@ -43,7 +43,7 @@ class OverviewTableViewCell: UITableViewCell {
         ratingLabel.text = "\(cafe.rating)"
         
         let overView = cafe.overview
-        timeLimitLabel.text = "\(overView.timeLimit) hr"
+        timeLimitLabel.text = overView.timeLimit
         averageCostLabel.text = "$\(overView.averageCost)"
         addressLabel.text = overView.address
     }

@@ -29,7 +29,6 @@ class DetailViewController: UIViewController {
         }
     }
     
-    
     @IBAction func backBtn(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
@@ -169,7 +168,9 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
                 return cell
                 
             default:
-                let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ListTableViewCell.self), for: indexPath)
+                let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ListTableViewCell.self), for: indexPath) as! ListTableViewCell
+                
+                cell.layoutView(suggestion: cafe.suggestions[indexPath.row - 1])
                 return cell
             }
         }
@@ -243,13 +244,6 @@ extension DetailViewController: UICollectionViewDataSource, UICollectionViewDele
         
         return cell
     }
-    
-//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//
-//        let view = SegmentHeaderView(coder: NSCoder)
-//
-//        return view
-//    }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
