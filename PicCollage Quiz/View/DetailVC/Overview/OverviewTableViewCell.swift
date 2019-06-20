@@ -17,6 +17,7 @@ class OverviewTableViewCell: UITableViewCell {
     @IBOutlet weak var ratingLabel: UILabel!
     @IBOutlet weak var timeLimitLabel: UILabel!
     @IBOutlet weak var averageCostLabel: UILabel!
+    @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var openHourLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     
@@ -45,6 +46,14 @@ class OverviewTableViewCell: UITableViewCell {
         let overView = cafe.overview
         timeLimitLabel.text = overView.timeLimit
         averageCostLabel.text = "$\(overView.averageCost)"
+        statusLabel.text = overView.status
+        openHourLabel.text = overView.info
         addressLabel.text = overView.address
+        
+        if overView.isOpen == false {
+            statusLabel.textColor = UIColor.Red!
+        } else {
+            statusLabel.textColor = UIColor.Green!
+        }
     }
 }

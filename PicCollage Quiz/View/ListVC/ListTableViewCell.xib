@@ -82,11 +82,11 @@
                         <color key="textColor" name="B1"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Closed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkO-2k-uCU">
-                        <rect key="frame" x="299" y="23.5" width="39.5" height="20"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Closed " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkO-2k-uCU">
+                        <rect key="frame" x="299" y="24" width="45" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                        <color key="textColor" name="B2"/>
+                        <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="lWBorderWidth">
@@ -113,6 +113,7 @@
                 <outlet property="cafeTitle" destination="YCS-d2-bGx" id="e39-dg-0JV"/>
                 <outlet property="rateView" destination="yND-tx-4wg" id="13l-pY-xMi"/>
                 <outlet property="ratingLabel" destination="bfB-Xd-gq7" id="lTP-sh-xzh"/>
+                <outlet property="statusLabel" destination="DkO-2k-uCU" id="wJz-GR-hlQ"/>
             </connections>
             <point key="canvasLocation" x="16.666666666666668" y="8.7053571428571423"/>
         </tableViewCell>

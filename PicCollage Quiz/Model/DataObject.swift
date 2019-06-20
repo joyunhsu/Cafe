@@ -34,6 +34,8 @@ struct Overview: Codable {
     let timeLimit: String
     let averageCost: String
     let isOpen: Bool
+    let status: String
+    let info: String
     let address: String
     let phone: String
     let website: String
@@ -42,7 +44,7 @@ struct Overview: Codable {
     enum CodingKeys: String, CodingKey {
         case timeLimit = "time_limit"
         case averageCost = "average_cost"
-        case isOpen, address, phone, website, features
+        case isOpen, address, phone, website, features, status, info
     }
 }
 
@@ -99,10 +101,11 @@ struct Suggestion: Codable {
     let photo: String
     let distance: String
     let reviewCount: Int
+    let isOpen: Bool
     
     enum CodingKeys: String, CodingKey {
         case reviewCount = "review_count"
         case title, region, rating
-        case photo, distance
+        case photo, distance, isOpen
     }
 }

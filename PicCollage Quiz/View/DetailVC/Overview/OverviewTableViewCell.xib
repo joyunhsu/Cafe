@@ -183,8 +183,8 @@
                             <constraint firstAttribute="width" constant="17" id="rSO-OA-8ow"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open until 20:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTn-HN-VSl">
-                        <rect key="frame" x="54" y="186" width="160" height="28"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Closed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTn-HN-VSl">
+                        <rect key="frame" x="54" y="186" width="66.5" height="28"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="28" id="D70-UB-0yg"/>
                         </constraints>
@@ -290,6 +290,12 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGw-eZ-IPh">
+                        <rect key="frame" x="128.5" y="189.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" name="B1"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="GLx-fv-5dA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3Y5-Dw-IN2"/>
@@ -298,6 +304,7 @@
                     <constraint firstItem="A6b-wP-me7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="7qN-n9-jMh"/>
                     <constraint firstItem="10P-XW-iFY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="AhS-hG-ZQV"/>
                     <constraint firstItem="NLk-AJ-w8v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="AxV-Jl-klI"/>
+                    <constraint firstItem="jGw-eZ-IPh" firstAttribute="centerY" secondItem="WTn-HN-VSl" secondAttribute="centerY" id="Btj-h3-Clw"/>
                     <constraint firstItem="OEA-Me-2Lz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Iga-3w-MDF"/>
                     <constraint firstItem="Fcz-Yd-IRy" firstAttribute="top" secondItem="OEA-Me-2Lz" secondAttribute="bottom" constant="56" id="K70-lr-xRw"/>
                     <constraint firstAttribute="trailing" secondItem="Fcz-Yd-IRy" secondAttribute="trailing" constant="20" id="M1M-HK-vqi"/>
@@ -336,6 +343,7 @@
                     <constraint firstItem="Yui-g2-T3y" firstAttribute="top" secondItem="Nft-VJ-76B" secondAttribute="bottom" constant="18" id="wRr-UJ-pLS"/>
                     <constraint firstItem="wV6-T4-uzL" firstAttribute="top" secondItem="A6b-wP-me7" secondAttribute="bottom" constant="4" id="xey-H5-0VZ"/>
                     <constraint firstItem="xYP-PG-SbO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="yKP-GO-1Q4"/>
+                    <constraint firstItem="jGw-eZ-IPh" firstAttribute="leading" secondItem="WTn-HN-VSl" secondAttribute="trailing" constant="8" id="zW6-jF-ZZn"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -344,9 +352,10 @@
                 <outlet property="averageCostLabel" destination="lWy-JD-Z85" id="Ghr-zv-fyx"/>
                 <outlet property="cosmosView" destination="Nft-VJ-76B" id="1nW-cF-6Ld"/>
                 <outlet property="directionBtn" destination="10P-XW-iFY" id="flz-FU-vjs"/>
-                <outlet property="openHourLabel" destination="WTn-HN-VSl" id="Sp6-eN-GQ4"/>
+                <outlet property="openHourLabel" destination="jGw-eZ-IPh" id="JSZ-05-Crn"/>
                 <outlet property="ratingLabel" destination="lp2-ta-qle" id="EBV-Yj-bLr"/>
                 <outlet property="regionLabel" destination="A6b-wP-me7" id="49J-8m-nba"/>
+                <outlet property="statusLabel" destination="WTn-HN-VSl" id="hmF-SN-Aw7"/>
                 <outlet property="timeLimitLabel" destination="pPL-0a-aqd" id="uXa-G9-ORu"/>
                 <outlet property="titleLabel" destination="wV6-T4-uzL" id="RAp-Ex-5TG"/>
             </connections>

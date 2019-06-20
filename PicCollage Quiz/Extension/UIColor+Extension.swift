@@ -14,6 +14,8 @@ private enum CafeColor: String {
     
     case Green
     
+    case Red
+    
     case B1
     
     case B2
@@ -26,6 +28,8 @@ extension UIColor {
     static let Blue = CafeColor(.Blue)
     
     static let Green = CafeColor(.Green)
+    
+    static let Red = CafeColor(.Red)
     
     static let B1 = CafeColor(.B1)
     

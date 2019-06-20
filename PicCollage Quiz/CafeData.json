@@ -10,7 +10,9 @@
             "overview": {
                 "time_limit": "2 hr",
                 "average_cost": "101-200",
-                "isOpen": true,
+                "isOpen": false,
+                "status": "Closed",
+                "info": "open at 09:00",
                 "open_hour": {
                     "Monday": ["09:00", "20:00"],
                     "Tuesday": ["09:00", "20:00"],
@@ -71,7 +73,8 @@
                     "rating": 4.4,
                     "photo": "LaBelleCoffee1",
                     "distance": "400m",
-                    "review_count": 12
+                    "review_count": 12,
+                    "isOpen": true
                 },
                 {
                     "title": "La Belle Coffee",
@@ -79,15 +82,17 @@
                     "rating": 4.2,
                     "photo": "LaBelleCoffee4",
                     "distance": "650m",
-                    "review_count": 7
+                    "review_count": 7,
+                    "isOpen": true
                 },
                 {
-                    "title": "cafe1",
+                    "title": "Coffee Treehouse",
                     "region": "台北市大安區",
                     "rating": 3.5,
                     "photo": "LaBelleCoffee5",
                     "distance": "1.2km",
-                    "review_count": 11
+                    "review_count": 11,
+                    "isOpen": true
                 }
             ]
         },
@@ -102,6 +107,8 @@
                 "time_limit": "None",
                 "average_cost": "201-300",
                 "isOpen": true,
+                "status": "Open",
+                "info": "until 22:00",
                 "open_hour": {
                     "Monday": ["09:00", "20:00"],
                     "Tuesday": ["09:00", "20:00"],
@@ -160,12 +167,13 @@
             ],
             "suggestions": [
                 {
-                    "title": "精品咖啡",
+                    "title": "跳舞山羊咖啡",
                     "region": "台北市大安區",
                     "rating": 4.4,
-                    "photo": "LaBelleCoffee1",
+                    "photo": "DancingGoats1",
                     "distance": "400m",
-                    "review_count": 12
+                    "review_count": 12,
+                    "isOpen": true
                 },
                 {
                     "title": "La Belle Coffee",
@@ -173,15 +181,116 @@
                     "rating": 4.2,
                     "photo": "LaBelleCoffee4",
                     "distance": "650m",
-                    "review_count": 7
+                    "review_count": 7,
+                    "isOpen": true
                 },
                 {
-                    "title": "cafe1",
+                    "title": "Coffee Treehouse",
                     "region": "台北市大安區",
                     "rating": 3.5,
                     "photo": "LaBelleCoffee5",
                     "distance": "1.2km",
-                    "review_count": 11
+                    "review_count": 11,
+                    "isOpen": true
+                }
+            ]
+        },
+        {
+            "title": "跳舞山羊咖啡",
+            "region": "台北市,大安區",
+            "rating": 4.1,
+            "review_count": 14,
+            "distance": "800m",
+            "isMarked": true,
+            "overview": {
+                "time_limit": "2 hr",
+                "average_cost": "201-300",
+                "isOpen": true,
+                "status": "Open",
+                "info": "until 22:00",
+                "open_hour": {
+                    "Monday": ["09:00", "20:00"],
+                    "Tuesday": ["09:00", "20:00"],
+                    "Wednesday": ["09:00", "20:00"],
+                    "Thursday": ["09:00", "20:00"],
+                    "Friday": ["09:00", "20:00"],
+                    "Saturday": ["09:00", "20:00"],
+                    "Sunday": ["09:00", "20:00"]
+                },
+                "address": "10660, Taiwan, Taipei City, Da’an District, 新生南路三段6-1號",
+                "phone": "+886 2 2327 9937",
+                "website": "https://www.facebook.com/DancingGoats/",
+                "features": {
+                    "power_plug": true,
+                    "kid_friendly": true,
+                    "wifi": true,
+                    "pets_allowed": true
+                }
+            },
+            "reviews": {
+                "ratings": {
+                    "review_count": 14,
+                    "average": 4.1,
+                    "coffee": 5,
+                    "location": 3.5,
+                    "environment": 4,
+                    "service": 4,
+                    "value": 4
+                },
+                "display_review": [
+                    {
+                        "user": "user5",
+                        "month": "March",
+                        "year": "2019",
+                        "rating": 5,
+                        "review": "Great food, wonderful atmosphere and really friendly staff."
+                    },
+                    {
+                        "user": "user6",
+                        "month": "November",
+                        "year": "2018",
+                        "rating": 4.5,
+                        "review": "The beans are fresh and they let you smell the scent right after each grind."
+                    }
+                ]
+            },
+            "photos": [
+                "DancingGoats1",
+                "DancingGoats3",
+                "DancingGoats6",
+                "DancingGoats4",
+                "DancingGoats5",
+                "DancingGoats3",
+                "DancingGoats2",
+                "DancingGoats6"
+            ],
+            "suggestions": [
+                {
+                    "title": "精品咖啡",
+                    "region": "台北市大安區",
+                    "rating": 4.4,
+                    "photo": "LaBelleCoffee1",
+                    "distance": "400m",
+                    "review_count": 12,
+                    "isOpen": true
+                },
+                {
+                    "title": "La Belle Coffee",
+                    "region": "台北市大安區",
+                    "rating": 4.2,
+                    "photo": "LaBelleCoffee4",
+                    "distance": "650m",
+                    "review_count": 7,
+                    "isOpen": true
+                },
+                {
+                    "title": "Coffee Treehouse",
+                    "region": "台北市大安區",
+                    "rating": 3.5,
+                    "photo": "LaBelleCoffee5",
+                    "distance": "1.2km",
+                    "review_count": 11,
+                    "isOpen": true
                 }
             ]
         }
