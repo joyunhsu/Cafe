@@ -17,5 +17,12 @@ class LastPhotoCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    func layoutView(image: String, count: Int) {
+        
+        imageView.image = UIImage(named: image)
+        
+        photoCountLabel.text = "\(count) Photos"
+    }
 
 }

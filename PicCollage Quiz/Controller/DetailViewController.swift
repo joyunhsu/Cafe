@@ -97,10 +97,12 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
             switch indexPath.row {
             case 0:
                 let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SectionHeaderTableViewCell.self), for: indexPath) as! SectionHeaderTableViewCell
+                cell.layoutView(title: "Reviews")
                 return cell
                 
             case 1:
                 let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: RatingsTableViewCell.self), for: indexPath) as! RatingsTableViewCell
+                cell.layoutView(cafe: cafe)
                 return cell
                 
             case 4:
@@ -122,10 +124,12 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
                 
             case 0:
                 let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SectionHeaderTableViewCell.self), for: indexPath) as! SectionHeaderTableViewCell
+                cell.layoutView(title: "Photos")
                 return cell
                 
             default:
-                let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: PhotoTableViewCell.self), for: indexPath)
+                let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: PhotoTableViewCell.self), for: indexPath) as! PhotoTableViewCell
+                cell.layoutView(cafe: cafe)
                 return cell
             }
             

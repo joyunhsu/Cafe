@@ -31,21 +31,23 @@ class RatingsTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func layoutView(review: Int, average: Double, coffee: Double, location: Double, envir: Double, service: Double, value: Double) {
+    func layoutView(cafe: Cafe) {
         
-        reviewCount.text = "\(review) Reviews"
+        let ratings = cafe.reviews.ratings
         
-        averageRating.rating = average
+        reviewCount.text = "\(ratings.reviewCount) Reviews"
         
-        coffeeRating.rating = coffee
+        averageRating.rating = ratings.average
         
-        locationRating.rating = location
+        coffeeRating.rating = ratings.coffee
         
-        environmentRating.rating = envir
+        locationRating.rating = ratings.location
         
-        serviceRating.rating = service
+        environmentRating.rating = ratings.environment
         
-        valueRating.rating = value
+        serviceRating.rating = ratings.service
+        
+        valueRating.rating = ratings.value
     }
     
 }

@@ -9,7 +9,9 @@
 import UIKit
 
 class SectionHeaderTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +21,11 @@ class SectionHeaderTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func layoutView(title: String) {
+        
+        titleLabel.text = title
     }
     
 }

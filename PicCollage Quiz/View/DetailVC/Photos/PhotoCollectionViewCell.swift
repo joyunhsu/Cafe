@@ -16,5 +16,10 @@ class PhotoCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    func layoutView(image: String) {
+        
+        imageView.image = UIImage(named: image)
+    }
 
 }

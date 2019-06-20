@@ -27,7 +27,8 @@ class ReviewTableViewCell: UITableViewCell {
     
     func layoutView(userImage: String, time: String, rating: String, review: String) {
         
-        userImageView.image = UIImage(named: userImage)
+//        userImageView.image = UIImage(named: userImage)
+        
         timeRateLabel.text = "\(time) | \(rating)"
         
         reviewLabel.text = review

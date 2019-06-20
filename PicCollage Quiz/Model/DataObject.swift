@@ -25,7 +25,8 @@ struct Cafe: Codable {
     
     enum CodingKeys: String, CodingKey {
         case reviewCount = "review_count"
-        case title, region, rating, distance, isMarked, overview, reviews, photos, suggestions
+        case title, region, rating, distance, isMarked
+        case overview, reviews, photos, suggestions
     }
 }
 
@@ -60,7 +61,36 @@ struct Feature: Codable {
 }
 
 struct Reviews: Codable {
+    let ratings: Rating
+    let displayReview: [Review]
     
+    enum CodingKeys: String, CodingKey {
+        case displayReview = "display_review"
+        case ratings
+    }
+}
+
+struct Rating: Codable {
+    let reviewCount: Int
+    let average: Double
+    let coffee: Double
+    let location: Double
+    let environment: Double
+    let service: Double
+    let value: Double
+    
+    enum CodingKeys: String, CodingKey {
+        case reviewCount = "review_count"
+        case average, coffee, location, environment, service, value
+    }
+}
+
+struct Review: Codable {
+    let user: String
+    let month: String
+    let year: String
+    let rating: Double
+    let review: String
 }
 
 struct Suggestion: Codable {

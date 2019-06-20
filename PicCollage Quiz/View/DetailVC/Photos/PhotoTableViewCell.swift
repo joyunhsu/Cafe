@@ -11,6 +11,8 @@ import UIKit
 class PhotoTableViewCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var photoCollectionView: UICollectionView!
+    
+    var cafe: Cafe?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,20 +30,33 @@ class PhotoTableViewCell: UITableViewCell, UICollectionViewDataSource, UICollect
         // Configure the view for the selected state
     }
     
+    func layoutView(cafe: Cafe) {
+        
+        self.cafe = cafe
+        
+        photoCollectionView.reloadData()
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 4
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
+        guard let cafe = cafe else { return UICollectionViewCell() }
+        
         switch indexPath.item {
             
         case 3:
-            let cell = photoCollectionView.dequeueReusableCell(withReuseIdentifier: String(describing: LastPhotoCollectionViewCell.self), for: indexPath)
+            let cell = photoCollectionView.dequeueReusableCell(withReuseIdentifier: String(describing: LastPhotoCollectionViewCell.self), for: indexPath) as! LastPhotoCollectionViewCell
+            
+            cell.layoutView(image: cafe.photos[3], count: cafe.photos.count)
             return cell
             
         default:
             let cell = photoCollectionView.dequeueReusableCell(withReuseIdentifier: String(describing: PhotoCollectionViewCell.self), for: indexPath) as! PhotoCollectionViewCell
+            
+            cell.layoutView(image: cafe.photos[indexPath.item])
             return cell
         }
     }
