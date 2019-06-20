@@ -9,7 +9,10 @@
 import UIKit
 
 class InfoTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var infoTitleLabel: UILabel!
+    @IBOutlet weak var infoLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +22,12 @@ class InfoTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func layoutView(title: String, info: String) {
+        
+        infoTitleLabel.text = title
+        infoLabel.text = info
     }
     
 }

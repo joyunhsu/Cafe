@@ -29,18 +29,32 @@
                         <color key="textColor" name="B1"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tHa-vb-anE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                        <color key="backgroundColor" name="B3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="lPT-Nk-1da"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="tHa-vb-anE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Kpo-Qo-42R"/>
+                    <constraint firstAttribute="trailing" secondItem="tHa-vb-anE" secondAttribute="trailing" id="cV1-60-kt2"/>
+                    <constraint firstItem="tHa-vb-anE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="rgX-sn-Gkk"/>
                     <constraint firstItem="whY-oF-ddz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="zKI-Ca-rHY"/>
                     <constraint firstAttribute="bottom" secondItem="whY-oF-ddz" secondAttribute="bottom" constant="13" id="zrc-BH-Qm7"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="131.15942028985509" y="114.50892857142857"/>
         </tableViewCell>
     </objects>
     <resources>
         <namedColor name="B1">
             <color red="0.40392156862745099" green="0.40392156862745099" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="B3">
+            <color red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

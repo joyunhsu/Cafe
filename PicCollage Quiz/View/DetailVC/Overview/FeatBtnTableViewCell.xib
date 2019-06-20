@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FeatBtnTableViewCell" customModule="PicCollage_Quiz" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Features" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmI-io-MVb">
+                        <rect key="frame" x="20" y="11" width="335" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" name="B1"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V2p-MO-Dpj">
+                        <rect key="frame" x="20" y="0.0" width="335" height="1"/>
+                        <color key="backgroundColor" name="B3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="0Wl-i5-BL2"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YM6-Af-2XW">
+                        <rect key="frame" x="20" y="39" width="167.5" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title=" Power Plug" image="Icon_PowerPlug">
+                            <color key="titleColor" name="B1"/>
+                        </state>
+                        <state key="disabled" image="Icon_PowerPlug_Disabled">
+                            <color key="titleColor" name="B3"/>
+                        </state>
+                        <state key="selected" image="Icon_PowerPlug">
+                            <color key="titleColor" name="B1"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Kr-7A-yAY">
+                        <rect key="frame" x="187.5" y="39" width="167.5" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title=" Kid-friendly" image="Icon_Kids">
+                            <color key="titleColor" name="B1"/>
+                        </state>
+                        <state key="disabled" image="Icon_Kids_Disabled">
+                            <color key="titleColor" name="B3"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ArY-W0-7eX">
+                        <rect key="frame" x="20" y="69" width="167.5" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title=" WiFi" image="Icon_Wifi">
+                            <color key="titleColor" name="B1"/>
+                        </state>
+                        <state key="disabled" image="Icon_Wifi_Disabled">
+                            <color key="titleColor" name="B3"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6aX-a1-fdv">
+                        <rect key="frame" x="187.5" y="69" width="167.5" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title=" Pets Allowed" image="Icon_Pets">
+                            <color key="titleColor" name="B1"/>
+                        </state>
+                        <state key="disabled" image="Icon_Pets_Disabled">
+                            <color key="titleColor" name="B3"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YM6-Af-2XW" firstAttribute="top" secondItem="fmI-io-MVb" secondAttribute="bottom" constant="10" id="49x-AJ-She"/>
+                    <constraint firstItem="6Kr-7A-yAY" firstAttribute="top" secondItem="YM6-Af-2XW" secondAttribute="top" id="8rH-Wp-jak"/>
+                    <constraint firstItem="fmI-io-MVb" firstAttribute="top" secondItem="V2p-MO-Dpj" secondAttribute="bottom" constant="10" id="9fG-1l-RV4"/>
+                    <constraint firstItem="6aX-a1-fdv" firstAttribute="top" secondItem="ArY-W0-7eX" secondAttribute="top" id="DE2-cf-hXa"/>
+                    <constraint firstItem="fmI-io-MVb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="EeM-A9-Xgg"/>
+                    <constraint firstItem="ArY-W0-7eX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Gp0-cL-OWo"/>
+                    <constraint firstItem="YM6-Af-2XW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="IRO-nW-yYG"/>
+                    <constraint firstItem="6Kr-7A-yAY" firstAttribute="leading" secondItem="YM6-Af-2XW" secondAttribute="trailing" id="LWN-Po-J84"/>
+                    <constraint firstItem="ArY-W0-7eX" firstAttribute="width" secondItem="6aX-a1-fdv" secondAttribute="width" id="MYj-t2-KMJ"/>
+                    <constraint firstAttribute="trailing" secondItem="fmI-io-MVb" secondAttribute="trailing" constant="20" id="PFC-1D-Tnq"/>
+                    <constraint firstItem="6aX-a1-fdv" firstAttribute="leading" secondItem="ArY-W0-7eX" secondAttribute="trailing" id="QBj-fL-dk7"/>
+                    <constraint firstAttribute="trailing" secondItem="6aX-a1-fdv" secondAttribute="trailing" constant="20" id="TE1-Xo-zZX"/>
+                    <constraint firstItem="ArY-W0-7eX" firstAttribute="top" secondItem="YM6-Af-2XW" secondAttribute="bottom" constant="10" id="XQh-dG-Q3x"/>
+                    <constraint firstItem="V2p-MO-Dpj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fwg-Sr-0Ol"/>
+                    <constraint firstAttribute="trailing" secondItem="6Kr-7A-yAY" secondAttribute="trailing" constant="20" id="k82-Ey-iBu"/>
+                    <constraint firstItem="V2p-MO-Dpj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="kmG-EW-yRZ"/>
+                    <constraint firstAttribute="trailing" secondItem="V2p-MO-Dpj" secondAttribute="trailing" constant="20" id="nYv-xX-HF4"/>
+                    <constraint firstItem="YM6-Af-2XW" firstAttribute="width" secondItem="6Kr-7A-yAY" secondAttribute="width" id="shv-mc-mAa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="kidBtn" destination="6Kr-7A-yAY" id="02x-1r-Onm"/>
+                <outlet property="petsBtn" destination="6aX-a1-fdv" id="GnF-lc-r5X"/>
+                <outlet property="powerPlugBtn" destination="YM6-Af-2XW" id="KEO-it-Fdy"/>
+                <outlet property="wifiBtn" destination="ArY-W0-7eX" id="ahi-xX-6Ac"/>
+            </connections>
+            <point key="canvasLocation" x="35.507246376811594" y="34.821428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Icon_Kids" width="20" height="20"/>
+        <image name="Icon_Kids_Disabled" width="20" height="20"/>
+        <image name="Icon_Pets" width="20" height="20"/>
+        <image name="Icon_Pets_Disabled" width="20" height="20"/>
+        <image name="Icon_PowerPlug" width="20" height="20"/>
+        <image name="Icon_PowerPlug_Disabled" width="20" height="20"/>
+        <image name="Icon_Wifi" width="20" height="20"/>
+        <image name="Icon_Wifi_Disabled" width="20" height="20"/>
+        <namedColor name="B1">
+            <color red="0.40392156862745099" green="0.40392156862745099" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="B3">
+            <color red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

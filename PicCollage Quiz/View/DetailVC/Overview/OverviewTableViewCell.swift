@@ -7,8 +7,18 @@
 //
 
 import UIKit
+import Cosmos
 
 class OverviewTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var regionLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var cosmosView: CosmosView!
+    @IBOutlet weak var ratingLabel: UILabel!
+    @IBOutlet weak var timeLimitLabel: UILabel!
+    @IBOutlet weak var averageCostLabel: UILabel!
+    @IBOutlet weak var openHourLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
     
     @IBOutlet weak var directionBtn: UIButton!
 
@@ -26,4 +36,7 @@ class OverviewTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func layoutView() {
+        
+    }
 }

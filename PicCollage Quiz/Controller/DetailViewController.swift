@@ -27,7 +27,7 @@ class DetailViewController: UIViewController {
         
         tableView.jh_registerCellWithNib(identifier: String(describing: InfoTableViewCell.self), bundle: nil)
         
-        tableView.jh_registerCellWithNib(identifier: String(describing: FeatureTableViewCell.self), bundle: nil)
+        tableView.jh_registerCellWithNib(identifier: String(describing: FeatBtnTableViewCell.self), bundle: nil)
         
         tableView.jh_registerCellWithNib(identifier: String(describing: RatingsTableViewCell.self), bundle: nil)
         
@@ -66,14 +66,12 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
             
             switch indexPath.row {
             case 0:
-                let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: OverviewTableViewCell.self), for: indexPath)
-                guard let overviewCell = cell as? OverviewTableViewCell else { return cell }
-                return overviewCell
+                let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: OverviewTableViewCell.self), for: indexPath) as! OverviewTableViewCell
+                return cell
                 
             case 3:
-                let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: FeatureTableViewCell.self), for: indexPath)
-                guard let featureCell = cell as? FeatureTableViewCell else { return cell }
-                return featureCell
+                let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: FeatBtnTableViewCell.self), for: indexPath) as! FeatBtnTableViewCell
+                return cell
                 
             default:
                 let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: InfoTableViewCell.self), for: indexPath)

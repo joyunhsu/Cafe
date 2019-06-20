@@ -337,7 +337,15 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="addressLabel" destination="ro5-EN-k0u" id="caT-Yu-xp6"/>
+                <outlet property="averageCostLabel" destination="lWy-JD-Z85" id="Ghr-zv-fyx"/>
+                <outlet property="cosmosView" destination="Nft-VJ-76B" id="1nW-cF-6Ld"/>
                 <outlet property="directionBtn" destination="10P-XW-iFY" id="flz-FU-vjs"/>
+                <outlet property="openHourLabel" destination="WTn-HN-VSl" id="Sp6-eN-GQ4"/>
+                <outlet property="ratingLabel" destination="lp2-ta-qle" id="EBV-Yj-bLr"/>
+                <outlet property="regionLabel" destination="A6b-wP-me7" id="49J-8m-nba"/>
+                <outlet property="timeLimitLabel" destination="pPL-0a-aqd" id="uXa-G9-ORu"/>
+                <outlet property="titleLabel" destination="wV6-T4-uzL" id="RAp-Ex-5TG"/>
             </connections>
             <point key="canvasLocation" x="138.40579710144928" y="325.44642857142856"/>
         </tableViewCell>
