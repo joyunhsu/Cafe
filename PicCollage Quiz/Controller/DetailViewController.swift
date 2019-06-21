@@ -173,6 +173,7 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
                 cell.layoutView(suggestion: cafe.suggestions[indexPath.row - 1])
                 return cell
             }
+            
         }
     
     }
@@ -253,7 +254,6 @@ extension DetailViewController: UICollectionViewDataSource, UICollectionViewDele
         
         galleryIndicatorLabel.text = "\(page)/\(cafe!.photos.count)"
     }
-    
 }
 
 extension DetailViewController: UICollectionViewDelegateFlowLayout {

@@ -33,17 +33,9 @@ class ListViewController: UIViewController {
         
         let data = try! Data(contentsOf: url)
         
-        print(data)
-        
-        let obj = try! JSONSerialization.jsonObject(with: data, options: .allowFragments)
-        
-        print(obj)
-        
         let decoder = JSONDecoder()
         
         let cafeData: CafeData = try! decoder.decode(CafeData.self, from: data)
-        
-        print(cafeData)
         
         cafes = cafeData.data
     }
@@ -58,6 +50,7 @@ class ListViewController: UIViewController {
             }
 
         }
+        
     }
 
 }
@@ -155,4 +148,5 @@ extension ListViewController: UICollectionViewDelegateFlowLayout {
         
         return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 0)
     }
+    
 }
